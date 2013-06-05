@@ -1,6 +1,8 @@
-Config Logitech Rumble Pad II
+#Logitech Rumble Pad II Config 
 
-See if the logitech are recognize
+##Basic test
+
+See if the logitech usb hub is recognize
 
 	dmesg
 
@@ -35,7 +37,7 @@ or the graphical version
 
 	jstest-gtk
 
-Config controller with RaspBMC
+##Config special keymapping in RaspBMC
 
 http://wiki.xbmc.org/index.php?title=Keymap.xml
 http://forum.xbmc.org/showthread.php?pid=606353%23pid606353
