@@ -37,6 +37,10 @@ or the graphical version
 
 	jstest-gtk
 
+ATTENTION :
+if the gamepad is plugged in before boot, nothing will happens on jstest.
+It will be recognize in it ONLY if the gamepad is plugged AFTER rapsbmc boot.
+
 ##Config special keymapping in RaspBMC
 
 http://wiki.xbmc.org/index.php?title=Keymap.xml
@@ -47,6 +51,8 @@ Getting the joystick name
 	cat /proc/bus/input/devices
 
 Logitech Logitech Cordless RumblePad 2
+
+See that the name contains a couple of 'Logitech' word. Reminds that if you want to write a personnal keymap file.
 
 Go to the keymap directory
 
