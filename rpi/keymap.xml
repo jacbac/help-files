@@ -1,9 +1,9 @@
 <!-------------------------------------------------------------------------------------------------->
 <!--                                                                                              -->
 <!-- This file contains the XBMC mapping of gamepad keys using a                                  -->
-<!-- "Logitech Cordless RumblePad 2" controller.                                                  -->
+<!-- "Logitech Logitech Cordless RumblePad 2" controller.                                                  -->
 <!--                                                                                              -->
-<!-- -= Benke01's Logitech Cordless RumblePad 2 configuration v 1.4. =-                           -->
+<!-- -= Benke01's Logitech Logitech Cordless RumblePad 2 configuration v 1.4. =-                           -->
 <!--                                                                                              -->
 <!-- Developed by Benke based on zosky's gamepad configuration v0.1b,                             -->
 <!-- which can be found at: http://zosky.pastebin.com/WXpa4Xfn.                                   -->
@@ -17,7 +17,7 @@
 <!-- If you want to use this gamepad configuration file for another                               -->
 <!-- controller, check your xbmc.log file after startup to find out                               -->
 <!-- the name id of your controller. Then replace every name id in                                -->
-<!-- <joystick name="Logitech Cordless RumblePad 2"> in this file                                 -->
+<!-- <joystick name="Logitech Logitech Cordless RumblePad 2"> in this file                                 -->
 <!-- with your own controller name.                                                               -->
 <!-- For example:                                                                                 -->
 <!--                                                                                              -->
@@ -26,7 +26,7 @@
 <!-- -=[ Configuration ]=-                                                                        -->
 <!--                                                                                              -->
 <!-- The format is:                                                                               -->
-<!--   <joystick name="Logitech Cordless RumblePad 2">                                            -->
+<!--   <joystick name="Logitech Logitech Cordless RumblePad 2">                                            -->
 <!--     <hat id="1" position="up">Up</hat>                                                       -->
 <!--     <button id="6">Right</button>                                                            -->
 <!--     <axis id="2" limit="+1">ScrollUp</axis>                                                  -->
@@ -58,7 +58,7 @@
 <!--   Right Thumb Pad = L/R = axis id 3, limit +1/-1                                             -->
 <!--   Right Thumb Pad = U/D = axis id 4, limit +1/-1                                             -->
 <!--                                                                                              -->
-<!-- * Logitech "mode" button will flip position of D-pad and Left                                -->
+<!-- * Logitech Logitech "mode" button will flip position of D-pad and Left                                -->
 <!--   Thumb Pad.                                                                                 -->
 <!--                                                                                              -->
 <!-------------------------------------------------------------------------------------------------->
@@ -124,7 +124,7 @@
  
 <keymap>
   <global>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <hat id="1" position="up">Up</hat>
       <hat id="1" position="down">Down</hat>
       <hat id="1" position="left">Left</hat>
@@ -177,7 +177,7 @@
  
 <!-- Library Windows -->
   <MyVideoFiles>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">Playlist</button>
       <button id="7">ToggleWatched</button>
      
@@ -186,7 +186,7 @@
   </MyVideoFiles>
  
   <MyVideoLibrary>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">Playlist</button>
       <button id="7">ToggleWatched</button>
      
@@ -196,7 +196,7 @@
   </MyVideoLibrary>
  
   <MyVideoPlaylist>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">MoveItemUp</button>
       <button id="7">MoveItemDown</button>
      
@@ -205,14 +205,14 @@
   </MyVideoPlaylist>
  
   <VideoBookmarks>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </VideoBookmarks>
  
 <!-- OSD Dialogs -->
   <VideoOSD>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
       <button id="4">Close</button> <!-- same button as for opening <VideoOSD> -->
       <button id="11">CodecInfo</button>
@@ -220,7 +220,7 @@
   </VideoOSD>
  
   <OSDVideoSettings>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
       <button id="11">CodecInfo</button>
     </joystick>
@@ -228,14 +228,14 @@
  
 <!-- Information Dialogs -->
   <MovieInformation>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">Close</button> <!-- same button as for opening Info -->
       <button id="3">Close</button>
     </joystick>
   </MovieInformation>
  
   <FullscreenInfo>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">Close</button> <!-- same button as for opening Info -->
       <button id="3">Close</button>
       <button id="4">OSD</button>
@@ -246,7 +246,7 @@
  
 <!-- Menus -->
   <VideoMenu>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="4">OSD</button> <!-- Video On-Screen-Display (VideoOSD) dialog -->
      
       <button id="5">AspectRatio</button>
@@ -264,7 +264,7 @@
  
 <!-- Watching -->
   <FullscreenVideo>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <hat id="1" position="up">BigStepForward</hat>
       <hat id="1" position="down">BigStepBack</hat>
       <hat id="1" position="left">StepBack</hat>
@@ -295,21 +295,21 @@
  
 <!-- Library Windows -->
   <MyMusicFiles>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">Playlist</button>
       <button id="11">Queue</button>
     </joystick>
   </MyMusicFiles>
  
   <MyMusicLibrary>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">Playlist</button>
       <button id="11">Queue</button>
     </joystick>
   </MyMusicLibrary>
  
   <MyMusicPlaylist>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">MoveItemUp</button>
       <button id="7">MoveItemDown</button>
      
@@ -318,7 +318,7 @@
   </MyMusicPlaylist>
  
   <MyMusicPlaylistEditor>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="5">MoveItemUp</button>
       <button id="7">MoveItemDown</button>
      
@@ -330,7 +330,7 @@
  
 <!-- OSD Dialogs -->
   <MusicOSD>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
       <button id="4">Close</button> <!-- same button as for opening MusicOSD -->
      
@@ -347,7 +347,7 @@
   </MusicOSD>
  
   <OSDAudioSettings>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
       <button id="11">CodecInfo</button>
     </joystick>
@@ -355,7 +355,7 @@
  
 <!-- Information Dialogs -->
   <MusicInformation>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">Close</button> <!-- same button as for opening Info (not working for dialog "SongInformation") -->
       <button id="3">Close</button>
     </joystick>
@@ -363,13 +363,13 @@
  
 <!-- Visualisation Setting Dialogs -->
   <VisualisationSettings>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </VisualisationSettings>
  
   <VisualisationPresetList>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <hat id="1" position="left">SkipPrevious</hat> <!-- previous song -->
       <hat id="1" position="right">SkipNext</hat>
  
@@ -388,7 +388,7 @@
  
 <!-- Listening -->  
   <Visualisation>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <hat id="1" position="up">NextPreset</hat> <!-- next visualisation -->
       <hat id="1" position="down">PreviousPreset</hat>
       <hat id="1" position="left">SkipPrevious</hat> <!-- previous song -->
@@ -423,7 +423,7 @@
  
 <!-- Information Dialogs -->
   <PictureInfo>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">Close</button> <!-- same button as for opening Info -->
       <button id="2">Pause</button>
       <button id="3">Close</button>
@@ -435,7 +435,7 @@
  
 <!-- Setting Dialogs -->
   <ScreenCalibration>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="2">NextCalibration</button> <!-- (replaces "Select" key which is also done in keyboard.xml) -->
      
       <button id="5">NextResolution</button>
@@ -446,7 +446,7 @@
  
 <!-- Watching -->
   <SlideShow>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <!-- D-pad reserved for zoom orientation -->
      
       <button id="1">Play</button> <!-- replaces "Info" key which does not work with Pictures -->
@@ -473,7 +473,7 @@
 <!-- ############### COMMON DIALOGS ############### --->
  
   <VirtualKeyboard>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <!--<button id="1"></button>--> <!-- UNASSIGNED -->
       <button id="3">Enter</button> <!-- Accepts input characters -->
       <button id="4">Close</button> <!-- Cancel input characters -->
@@ -489,31 +489,31 @@
   </VirtualKeyboard>
  
   <SelectDialog>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </SelectDialog>
  
   <ContextMenu>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </ContextMenu>
  
   <FileStackingDialog>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </FileStackingDialog>
  
   <PlayerControls>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </PlayerControls>
  
   <Favourites>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </Favourites>
@@ -521,19 +521,19 @@
 <!-- ############### SYSTEM DIALOGS ############### --->
  
   <Home>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">XBMC.ShutDown()</button>
     </joystick>
   </Home>
  
   <Weather>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="3">PreviousMenu</button>
     </joystick>
   </Weather>
  
   <MyFiles>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">Highlight</button>
      
       <button id="5">Rename</button>
@@ -544,20 +544,20 @@
   </MyFiles>
  
   <GUICalibration>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="2">NextCalibration</button> <!-- (replaces "Select" key which is also done in keyboard.xml) -->
       <button id="10">ResetCalibration</button> <!-- (same button as "ZoomNormal" in <SlideShow>) -->
     </joystick>
   </GUICalibration>
  
   <Scripts>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">XBMC.ActivateWindow(ScriptsDebugInfo)</button>
     </joystick>
   </Scripts>
  
   <ScriptsDebugInfo>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
       <button id="1">Info</button> <!-- clears debug python info -->
     </joystick>
   </ScriptsDebugInfo>
@@ -611,7 +611,7 @@
   </ProfileSettings>
  
   <Teletext>
-    <joystick name="Logitech Cordless RumblePad 2">
+    <joystick name="Logitech Logitech Logitech Logitech Cordless RumblePad 2">
       <button id="3">Close</button>
     </joystick>
   </Teletext>
