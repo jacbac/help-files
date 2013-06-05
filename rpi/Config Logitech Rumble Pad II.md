@@ -64,6 +64,7 @@ Make a new xml document
 
 Example of keymapping
 
-	http://pastebin.com/4z2SVJVm
-	https://raw.github.com/xbmc/xbmc/Frodo/system/keymaps/keyboard.xml
+http://pastebin.com/4z2SVJVm
+https://github.com/jacbac/help-files/blob/master/rpi/keymap.xml
+https://raw.github.com/xbmc/xbmc/Frodo/system/keymaps/keyboard.xml
 
