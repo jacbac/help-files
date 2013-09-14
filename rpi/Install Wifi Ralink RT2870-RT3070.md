@@ -1,10 +1,7 @@
 ADRESSE MAC
-902b345506cd	192.168.000.011	255.255.255.000	D:00 H:01 M:00 S:00	Tue May 14 21:38:14 2013	
-b827ebf13629	192.168.000.013
+
 
 clef wpa-psk
-
-c99aaf58d299bf7b830ec5b642
 
 Install Wifi
 ------------
