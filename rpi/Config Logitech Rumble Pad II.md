@@ -37,7 +37,7 @@ or the graphical version
 
 	jstest-gtk
 
-ATTENTION :
+WARNING :
 if the gamepad is plugged in before boot, nothing will happens on jstest.
 It will be recognize in it ONLY if the gamepad is plugged AFTER rapsbmc boot.
 
