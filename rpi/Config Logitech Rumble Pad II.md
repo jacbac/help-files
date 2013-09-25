@@ -1,5 +1,8 @@
 #Logitech Rumble Pad II Config 
 
+!!! This config do not work !!! I try this firstly on raspBmc then openElec for raspberry with NO effective results.
+I woul'd try on this days to compile my own xbmc for raspbeery, with the 'joystick flag' enabled. Next I will post the results here.
+
 ##Basic test
 
 See if the logitech usb hub is recognize
