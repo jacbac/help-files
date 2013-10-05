@@ -36,9 +36,9 @@ Launch test for the 'js0' controller and see button activation/deactivation
 
 	jstest /dev/input/js0
 
-or the graphical version
+Or test events
 
-	jstest-gtk
+	evtest /dev/input/by-id/usb-Logitech_Logitech_Cordless_RumblePad_2-event-joystick
 
 WARNING :
 if the gamepad is plugged in before boot, nothing will happens on jstest.

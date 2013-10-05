@@ -44,7 +44,7 @@ User
 
 Change the default password for the 'pi' user
 
-	sudo passwd pi
+  sudo passwd pi
 
 When asked, enter the new password twice
 
@@ -60,12 +60,12 @@ More info [FR]: http://www.git-attitude.fr/2010/09/13/comprendre-et-maitriser-le
 
 Copy your '.ssh/id_rsa.pub' local key on the raspi in a '.ssh/authorized_keys' file :
 
-	ssh-copy-id -i ~/.ssh/id_rsa.pub pi@[RASPBERRY.PI.IP]
+  ssh-copy-id -i ~/.ssh/id_rsa.pub pi@[RASPBERRY.PI.IP]
 
 Update repo
 -----------
 
-	sudo apt-get update
+  sudo apt-get update
 
 DON'T launch a system upgrade (apt-get upgrade), XMBC will resolve this later
 
@@ -74,25 +74,29 @@ Program
 
 Install vim (or your prefered text-editor CLI friendly) for next update, install and config
 
-	sudo apt-get install vim
+  sudo apt-get install vim
 
 Install Git to get program/raspberry tweak with some 'git clone' comand
 
-	sudo apt-get install git
+  sudo apt-get install git
 
-Mount on your destop PC your rasp file system
----------------------------------------------
+WIP Install XboxDrv to get 
+
+  sudo apt-get install xboxdrv
+
+[Optional] Mount on your destop PC your rasp file system
+-------------------------------------------------------
 
 Install if needed sshfs
 
-	sudo apt-get install sshfs
+  sudo apt-get install sshfs
 
 sshfs login@server:/your_distant/mount_folder /your_local/mount_folder
 
 Then mount your rasp file system in a 'pi' temp folder, by example on /home/user_name/
 
-	mkdir pi
-	sshfs pi@192.168.0.10:/home/pi pi
+  mkdir pi
+  sshfs pi@192.168.0.10:/home/pi pi
 
 The rasp file system is now accesible by nautilus or whatever GUI explorer.
 
@@ -101,27 +105,25 @@ Set your general config
 
 Read some documented config files 
 
-	http://elinux.org/RPi_config.txt
-	https://raw.github.com/Evilpaul/RPi-config/master/config.txt
+  http://elinux.org/RPi_config.txt
+  https://raw.github.com/Evilpaul/RPi-config/master/config.txt
 
 Then edit if needed yours
 
-	sudo vim /boot/config.txt
+  sudo vim /boot/config.txt
 
 For my ol' TV set (connected with composite) add
 
-	# Set stdv mode to PAL (used in Europe)
-	sdtv_mode=2
-	# Set stdv mode to 4:3 aspect ratio (default)
-	sdtv_aspect=1
+  # Set stdv mode to PAL (used in Europe)
+  sdtv_mode=2
+  # Set stdv mode to 4:3 aspect ratio (default)
+  sdtv_aspect=1
 
-	# Make display smaller to stop text spilling off the screen
-	overscan_left=24
-	overscan_right=24
-	overscan_top=24
-	overscan_bottom=24
-
-
+  # Make display smaller to stop text spilling off the screen
+  overscan_left=34
+  overscan_right=0
+  overscan_top=0
+  overscan_bottom=24
 
 Config on a launched RaspBMC
 ----------------------------
@@ -134,61 +136,97 @@ Configure audio for analog output (3.5mm jack)
 
 System > Settings > Audio (note this may vary depending on the skin you are using)
 
-	Select Analog as the Audio Output
-	Choose analog (OMX) as your Audio output Device
+  Select Analog as the Audio Output
+  Choose analog (OMX) as your Audio output Device
 
 Set up a WiFi adapter
 ---------------------
 
-Configure a remote controller
------------------------------
+WIP
+
+
+[Optional] Configure a remote controller
+----------------------------------------
+
+WIP
+
+### Recognize your Logitech Rumble Pad II joystick
+
+plug the USB dongle from the pad then 
+
+  lsusb
+
+or more specificaly
+
+  lsusb -v -d 046d:c219
+
+Bus 001 Device 004: ID 046d:c219 Logitech, Inc. Cordless RumblePad 2
+
+  xboxdrv --device-by-id 046d:c219 --type generic-usb --generic-usb-spec vid=046d,pid=c219,if=0,ep=2
+
+### Overwriting the basic keymapping
 
 XMBC comes with basic keymap definition for various controller. You can check them on
 
-	https://github.com/xbmc/xbmc/tree/Eden/system/keymaps
+  https://github.com/xbmc/xbmc/tree/Eden/system/keymaps
 
 Keymaps defined in user folders add to or override mappings in the global keymap
 
 For Linux system
 
-	 $ HOME/.xbmc/userdata/
+   $ HOME/.xbmc/userdata/
 
 For example and for enhance your Logitech Rumble Pad II keymap definition, 
 
-	http://wiki.xbmc.org/index.php?title=HOW-TO:Modify_keyboard.xml
+  http://wiki.xbmc.org/index.php?title=HOW-TO:Modify_keyboard.xml
 
-Go to the keymap directory
+Copy the original Logitech keymap to your userdata folder
 
-	cd /.xmbc/userdata
+  cp /opt/xbmc-bcm/xbmc-bin/share/xbmc/system/keymaps/joystick.Logitech.RumblePad.2.xml /home/pi/.xbmc/userdata/keymaps/
 
-Make a new xml document
-	
-	sudo vim keymap.xml
+2) cp /opt/xbmc-bcm/xbmc-bin/share/xbmc/system/keymaps/keyboard.xml /home/pi/.xbmc/userdata/keymaps/
+
+vim /home/pi/.xbmc/userdata/keymaps/keyboard.xml
+
+Then go to your keymap directory and edit your keymap file
+
+  cd /home/pi/.xbmc/userdata/keymaps/
+  vim joystick.Logitech.RumblePad.2.xml
 
 Example of enhanced keymapping
 
-	http://pastebin.com/4z2SVJVm
-	https://raw.github.com/xbmc/xbmc/Frodo/system/keymaps/keyboard.xml
+  http://pastebin.com/4z2SVJVm
 
-Game Emulator
-------------
+Games Emulators
+---------------
+
+WIP 
 
 Nintendo 64
+SNES
 
-In XMBC, 
+Help Notes
+---------
 
-Note
-----
-
-Copying files to or from the Pi
-
-	scp /path/to/your_file.zip pi@[RASPBERRY.PI.IP]:~/path/to/your_new_copied_file_directory
-
-Copying a log file from the pi, to the current directory on your local machine
-
-	scp pi@[RASPBERRY.PI.IP]:/home/pi/.xbmc/temp/xbmc.log ./
+### Basics
 
 Start or stop XMBC
 
-	sudo initctl start xbmc
-	sudo initctl stop xbmc
+  sudo initctl start xbmc
+  sudo initctl stop xbmc
+
+Copying files to or from the Pi
+
+  scp /path/to/your_file.zip pi@[RASPBERRY.PI.IP]:~/path/to/your_new_copied_file_directory
+
+### Logs
+
+View active log
+
+  tail -F /home/pi/.xbmc/temp/xbmc.log
+
+Copying a log file from the pi, to the current directory on your local machine
+
+  scp pi@[RASPBERRY.PI.IP]:/home/pi/.xbmc/temp/xbmc.log ./
+
+
