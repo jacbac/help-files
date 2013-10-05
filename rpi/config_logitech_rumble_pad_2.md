@@ -1,7 +1,8 @@
 #Logitech Rumble Pad II Config 
 
-!!! This config do not work !!! I try this firstly on raspBmc then openElec for raspberry with NO effective results.
+!!! WIP This config do not work !!! I try this firstly on raspBmc then openElec then xBian for raspberry with NO effective results.
 I woul'd try on this days to compile my own xbmc for raspbeery, with the 'joystick flag' enabled. Next I will post the results here.
+I try also xboxdrv with some results but ... to be continued !
 
 ##Basic test
 
@@ -25,11 +26,15 @@ See if the logitech usb hub is recognize
 
 > lsusb
 
+```
 Bus 003 Device 003: ID 046d:c219 Logitech, Inc. Cordless RumblePad 2
+```
 
 > ls /dev/input
 
+```
 js0
+```
 
 > sudo apt-get install joystick
 
@@ -47,6 +52,8 @@ It will be recognize in it ONLY if the gamepad is plugged AFTER rapsbmc boot.
 
 ##Config special keymapping in RaspBMC
 
+WIP
+
 http://wiki.xbmc.org/index.php?title=Keymap.xml
 http://forum.xbmc.org/showthread.php?pid=606353%23pid606353
 
@@ -54,7 +61,9 @@ Getting the joystick name
 
 > cat /proc/bus/input/devices
 
+```
 Logitech Logitech Cordless RumblePad 2
+```
 
 See that the name contains a couple of 'Logitech' word. Reminds that if you want to write a personnal keymap file.
 
