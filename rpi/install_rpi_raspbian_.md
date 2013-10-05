@@ -26,11 +26,11 @@ In my case for the 2013-09-25-wheezy-raspbian,
 Now, you can wait some times and take a break... The image is being 'loaded' to your lovely SD card !
 
 At the end, you can read something like this
-
+```
 706+1 enregistrements lus
 706+1 enregistrements écrits
 2962227200 octets (3,0 GB) copiés, 284,085 s, 10,4 MB/s
-
+```
 Ensure the write cache is flushed and that it is safe to unmount your SD card
 
 > sudo sync
@@ -45,21 +45,25 @@ Search the raspbian IP on private network (nmap needed)
 
 > nmap -sV --open 192.168.0.0/25 -p22
 
-ssh pi@[The_Raspbian_IP]
+Then connect
 
+> ssh pi@[The_Raspbian_IP]
+
+```
 login : pi
 password : raspberry
-
+```
 
 config.txt
 ----------
 
 Then edit if needed your general config file (for raspbian)
 
-  sudo vim /boot/config.txt
+>  sudo vim /boot/config.txt
 
 For my ol' TV set (connected with composite) add
 
+```
   # Set stdv mode to PAL (used in Europe)
   sdtv_mode=2
   # Set stdv mode to 4:3 aspect ratio (default)
@@ -70,3 +74,4 @@ For my ol' TV set (connected with composite) add
   overscan_right=0
   overscan_top=0
   overscan_bottom=24
+```
