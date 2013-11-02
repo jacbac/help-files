@@ -27,9 +27,11 @@ Now, you can wait some times and take a break... The image is being 'loaded' to 
 
 At the end, you can read something like this
 
+```
 1400832+0 records in
 1400832+0 records out
 534773760 bytes (535 MB) copied, 213,395 s, 2,5 MB/s
+```
 
 Ensure the write cache is flushed and that it is safe to unmount your SD card
 
@@ -45,13 +47,19 @@ Search the xbian IP on private network
 
 > nmap -sV --open 192.168.0.0/25 -p22
 
-ssh xbian@[The_Xbian_IP]
+then connect
 
+> ssh xbian@[The_Xbian_IP]
+
+```
 login : xbian
 password : raspberry
 
+or 
+
 login : root
 password : xbian
+```
 
 config.txt
 ----------
@@ -62,6 +70,7 @@ Then edit if needed your general config file (for raspbian)
 
 For my ol' TV set (connected with composite) add
 
+```
   # Set stdv mode to PAL (used in Europe)
   sdtv_mode=2
   # Set stdv mode to 4:3 aspect ratio (default)
@@ -72,3 +81,4 @@ For my ol' TV set (connected with composite) add
   overscan_right=0
   overscan_top=0
   overscan_bottom=24
+```
