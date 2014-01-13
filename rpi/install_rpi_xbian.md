@@ -8,20 +8,28 @@ For official and updated documentation, go to http://www.xbian.org/getting-start
 
 First check the mount names of your SD card
 
-> df -h
+```
+df -h
+```
 
 For me it's often 'sdc1' for partition 1, 'sdc2' for partition 2, etc. but be carefull about that cause you maybe gonna wipe your entire HD ! And please read the doc and don't hesitate to do a 'man dd' before !
 
-> umount /dev/sdc1
-> umount /dev/sdc2
+```
+umount /dev/sdc1
+umount /dev/sdc2
+```
 
 Once you have unmounted, download the xbian .img at http://www.xbian.org/download/, go to your download folder where the .img is, extract it, then (remember, that's the dangerous part)
 
-> sudo dd if=XBIAN_IMAGE_NAME.img of=/dev/YOUR_DISK
+```
+sudo dd if=XBIAN_IMAGE_NAME.img of=/dev/YOUR_DISK
+```
 
 In my case for the xbian 1.0 beta 1.1 img (2013-09-29)
 
-> sudo dd if=XBian_1.0_Beta_1.1.img of=/dev/sdc
+```
+sudo dd if=XBian_1.0_Beta_1.1.img of=/dev/sdc
+```
 
 Now, you can wait some times and take a break... The image is being 'loaded' to your lovely SD card !
 
@@ -35,7 +43,9 @@ At the end, you can read something like this
 
 Ensure the write cache is flushed and that it is safe to unmount your SD card
 
-> sudo sync
+```
+sudo sync
+```
 
 Remove SD card from card reader and plug-it :)
 
@@ -45,13 +55,15 @@ SSH
 
 Search the xbian IP on private network
 
-> nmap -sV --open 192.168.0.0/25 -p22
+```
+nmap -sV --open 192.168.0.0/25 -p22
+```
 
 then connect
 
-> ssh xbian@[The_Xbian_IP]
-
 ```
+ssh xbian@[The_Xbian_IP]
+
 login : xbian
 password : raspberry
 
@@ -66,7 +78,9 @@ config.txt
 
 Then edit if needed your general config file (for raspbian)
 
-  sudo vim /boot/config.txt
+```
+sudo vim /boot/config.txt
+```
 
 For my ol' TV set (connected with composite) add
 
