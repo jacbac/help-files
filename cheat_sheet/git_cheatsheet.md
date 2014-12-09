@@ -20,8 +20,9 @@ Supprime le fichier du système de suivi de version mais le préserve localement
 git rm cached
 ```
 
-
+Informe une branche locale de suivre par défaut une branche spécifique sur le dépôt
 ```
+git branch --set-upstream <local_branch> origin/<repo_branch>
 ```
 
 ```
