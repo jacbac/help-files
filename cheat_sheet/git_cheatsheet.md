@@ -22,6 +22,8 @@ git rm cached
 
 Informe une branche locale de suivre par défaut une branche spécifique sur le dépôt
 ```
+git push -u <remote-name> <branch-name>
+OU
 git branch --set-upstream <local_branch> origin/<repo_branch>
 ```
 
