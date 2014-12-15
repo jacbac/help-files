@@ -4,7 +4,19 @@ Git tools
 Open gitk as a independent process
 ```
 gitk --all &
+or
+gitk --all --date-order &
 ```
+
+Gitk useful options :
+
+```
+--all : Show all branches
+--date-order : Order commits and changes by date
+& : Open gitk as a separate process
+```
+
+Gitk creates the `.gitk` file in your $HOME directory to store preferences such as display options, font, and colors.
 
 Git workflow
 ------------
@@ -28,4 +40,10 @@ git branch --set-upstream <local_branch> origin/<repo_branch>
 ```
 
 ```
+git rebase -i
 ```
+
+pick
+edit
+reword
+squash
