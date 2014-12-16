@@ -1,14 +1,15 @@
 Git tools
 ---------
 
-Open gitk as a independent process
+Open gitk as a independent process:
+
 ```
 gitk --all &
 or
 gitk --all --date-order &
 ```
 
-Gitk useful options :
+Gitk useful options:
 
 ```
 --all : Show all branches
@@ -16,7 +17,14 @@ Gitk useful options :
 & : Open gitk as a separate process
 ```
 
-Gitk creates the `.gitk` file in your $HOME directory to store preferences such as display options, font, and colors.
+Gitk creates the `.gitk` file in your $HOME directory to store preferences such as display options, font, and colors like:
+
+```
+set mainfont {Helvetica 9}
+set textfont {Courier 9}
+set uifont {Helvetica 9 bold}
+etc.
+```
 
 Git workflow
 ------------
