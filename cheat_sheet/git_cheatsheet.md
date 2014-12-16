@@ -61,7 +61,12 @@ git branch --set-upstream <local_branch> origin/<repo_branch>
 git rebase -i
 ```
 
-pick
-edit
-reword
-squash
+* pick
+* edit
+* reword
+* squash
+
+Delete a remote branch
+```
+git push origin --delete <branchName>
+```
