@@ -39,6 +39,8 @@ Git workflow
 
 * [Vincent Driessen famous git workflow (EN, 2010)](http://nvie.com/posts/a-successful-git-branching-model/)
 * [Marvinlabs git workflow cheatsheet (EN, 2013)](http://www.marvinlabs.com/2013/06/18/our-git-workflow-cheatsheet/)
+* [Sogilis severe rebase workflow (FR, 2014)](http://blog.sogilis.com/post/104148375576/notre-workflow-git-pourquoi-comment)
+* []()
 
 Git useful commands
 -------------------
