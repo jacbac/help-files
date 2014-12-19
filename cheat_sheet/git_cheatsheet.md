@@ -44,6 +44,7 @@ Git workflow
 * [Various example workflow (EN, 2014)](http://blog.endpoint.com/2014/05/git-workflows-that-work.html)
 * [J-P Fleury simple workflow (FR, ?)](http://www.jpfleury.net/tutoriels/gestion-projet-git.php)
 * [AOE single branch git workflow (EN, 2014)](http://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow)
+* [Gitready pull rebase technique](http://gitready.com/advanced/2009/02/11/pull-with-rebase.html)
 
 Git useful commands
 -------------------
