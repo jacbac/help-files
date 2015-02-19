@@ -7,10 +7,11 @@ Bundles
 * [A Symfony2 bundle to help load Doctrine Fixtures with Alice](https://github.com/hautelook/AliceBundle)
 * [LiipImagineBundle](https://github.com/liip/LiipImagineBundle)
 
-Helpers
--------
+Helpers & Librairies
+--------------------
 
-* [A handful of tools for PHP developers](https://github.com/ilya-dev/belt)
+* [Belt: a handful of tools for PHP developers](https://github.com/ilya-dev/belt)
+* [Parsedown: better Markdown Parser in PHP](https://github.com/erusev/parsedown)
 
 Dependency Injection
 --------------------
