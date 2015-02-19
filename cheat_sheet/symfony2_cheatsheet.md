@@ -1,6 +1,20 @@
 Symfony 2
 =========
 
+Bundles
+-------
+
+* [A Symfony2 bundle to help load Doctrine Fixtures with Alice](https://github.com/hautelook/AliceBundle)
+* [LiipImagineBundle](https://github.com/liip/LiipImagineBundle)
+
+Helpers
+-------
+
+* [A handful of tools for PHP developers](https://github.com/ilya-dev/belt)
+
+Dependency Injection
+--------------------
+
 [Handle hosts with SF events](http://knpuniversity.com/screencast/question-answer-day/symfony2-dynamic-subdomains)
 * Tags : {'DI', 'handle host', 'kernel event'}
 
