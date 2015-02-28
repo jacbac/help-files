@@ -54,18 +54,10 @@ sudo apt-get install libxss1
 Dev tools
 ---------
 
-* `zsh`:
-```
-sudo apt-get install zsh 
-chsh -s /bin/zsh
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-```
-
 * `vim`
 * `tree`
 * `git`
 * `apache2`
-* `mysql`
 * `mysql-workbench`
 * `php5`
 * `phpmyadmin`
@@ -79,12 +71,14 @@ wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - 
 * `php5-imagick`
 
 ```
-sudo apt-get install vim curl tree git zsh apache2 mysql-server mysql-workbench php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick filezilla 
+sudo apt-get install vim curl tree git apache2 mysql-server php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick filezilla mysql-workbench
 ```
 
-
+* `zsh`:
 ```
-sudo mysql_secure_installation
+sudo apt-get install zsh 
+chsh -s /bin/zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 ```
 
 * `composer`: 
@@ -121,6 +115,12 @@ Config
 git config --global color.ui true
 git config --global user.name "{YOUR_NAME}"
 git config --global user.email "{YOUR_@_MAIL.com}"
+```
+
+### MySQL
+
+```
+sudo mysql_secure_installation
 ```
 
 ### Adding current user to www-data group
