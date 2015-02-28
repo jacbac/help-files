@@ -1,18 +1,27 @@
-Post-Install Ubuntu Distrib
-===========================
+Post-Install Ubuntu Gnome 14.10
+===============================
 
-After you install brand new Ubuntu 13.04, the first thing you need to do is to update repositories and make sure you have the latest updates installed.
+After you install brand new Ubuntu Gnome 14.10, the first thing you need to do is to update repositories and make sure you have the latest updates installed.
 
-  sudo apt-get update && sudo apt-get upgrade
+```
+sudo apt-get update && sudo apt-get upgrade
+```
 
 Install the "ubuntu-restricted-extras" package. This will enable your Ubuntu to play popular file formats like mp3, avi, flash videos etc.
 
-  sudo apt-get install ubuntu-restricted-extras
+```
+sudo apt-get install ubuntu-restricted-extras
+```
 
-Progz Install
--------------
+PPAs
+----
 
-### Update PPAs
+```
+sudo add-apt-repository -y ppa:videolan/stable-daily
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
+sudo add-apt-repository -y ppa:webupd8team/java
+```
+
 
 * Sublime-text 3
 * Mozilla
