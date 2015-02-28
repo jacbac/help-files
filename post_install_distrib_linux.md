@@ -7,12 +7,6 @@ After you install brand new Ubuntu Gnome 14.10, the first thing you need to do i
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-Install the "ubuntu-restricted-extras" package. This will enable your Ubuntu to play popular file formats like mp3, avi, flash videos etc.
-
-```
-sudo apt-get install ubuntu-restricted-extras
-```
-
 PPAs
 ----
 
@@ -20,116 +14,114 @@ PPAs
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:webupd8team/java
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+
+sudo apt-get update
+```
+
+Basic tools
+-----------
+
+* `vlc`: media player
+* `gimp`: photo/image editor
+* `bleachbit`: cleaning utility
+* `ubuntu-restricted-extras`: play popular file formats like mp3, avi, flash videos etc.
+* `sublime-text-installer`
+* `oracle-java8-installer`: official Java installer
+* `xpad`: post-it
+
+```
+sudo apt-get install vlc gimp bleachbit ubuntu-restricted-extras oracle-java8-installer xpad htop
+```
+
+### With direct download
+
+* `google-chrome`: google's browser
+* `enpass`: secured passwords manager
+
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb && rm -f google-chrome-stable_current_amd64.deb
+```
+
+```
+cd <download_directory>
+chmod +x EnpassInstaller
+sudo apt-get install libxss1
+./EnpassInstaller
+```
+
+Dev tools
+---------
+
+* `zsh`:
+```
+sudo apt-get install zsh 
+chsh -s /bin/zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+```
+
+* `vim`
+* `tree`
+* `git`
+* `apache2`
+* `mysql`
+* `mysql-workbench`
+* `php5`
+* `phpmyadmin`
+* `filezilla`
+* `php5-cli`: 
+* `php5-curl`:
+* `php-pear`: for pecl installations
+* `php5-intl`:
+* `php5-mcrypt`:
+* `php5-mysql`:
+* `php5-imagick`
+
+```
+sudo apt-get install vim curl tree git zsh apache2 mysql-server mysql-workbench php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick filezilla 
 ```
 
 
-* Sublime-text 3
-* Mozilla
-
 ```
-sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo add-apt-repository ppa:ubuntu-mozilla-security/ppa
+sudo mysql_secure_installation
 ```
 
-### Install
-
-#### Dev environment
-
-WIP http://gorails.com/setup/ubuntu
-
-* Apache 2
-* PHP 5
-* MySql
-* Filezilla
-* Composer
-* Redmine
-* SonarQube
-* php-console
-* personnal projects with VHost
-* apache2 config
-* git config
-* dot-files
-* dev personnal directorys
-* virtual boxes
-* sublime-text 3 with package control
-* chrome with some extensions
-
+* `composer`: 
 ```
-sudo apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
 ```
 
-* Filezilla (yeah, sometimes...)
+* `nodejs`: 
+```
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+```
+
+* `xdebug`: 
+```
+pecl install xdebug
+zend_extension="/usr/local/php/modules/xdebug.so"
+```
+
+Clean-up
+--------
 
 ```
-sudo apt-get install filezilla filezilla-common
+sudo apt-get -f install && sudo apt-get autoremove && sudo apt-get -y autoclean && sudo apt-get -y clean
 ```
 
-* Git
+Config
+------
 
-If you don't already have a Github account, make sure to register. Then
+### Git
 
 ```
-sudo apt-get install git
-
 git config --global color.ui true
 git config --global user.name "{YOUR_NAME}"
 git config --global user.email "{YOUR_@_MAIL.com}"
-ssh-keygen -t rsa -C "{YOUR_@_MAIL.com}"
-
 ```
-
-The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and paste it [here](https://github.com/settings/ssh).
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-Once you've done this, you can check and see if it worked:
-
-```
-ssh -T git@github.com
-```
-
-You should get a message like this:
-
-```
-Hi {YOUR_GITHUB_NAME}! You've successfully authenticated, but GitHub does not provide shell access.
-```
-
-* Node.js
-
-```
-sudo add-apt-repository ppa:chris-lea/node.js
-sudo apt-get update
-sudo apt-get install nodejs
-```
-
-#### Usefull app
-
-```
-sudo apt-get install gimp vlc
-```
-
-#### Update installed stack
-
-```
-rails -v
-ruby -v
-sudo gem update
-sudo composer self-update
-```
-
-#### Laptop config
-
-Jupiter is No More, TLP Looks Like a Good Alternative
-
-```
-sudo add-apt-repository ppa:linrunner/tlp
-sudo apt-get update
-sudo apt-get install tlp tlp-rdw
-```
-
-Configz
--------
 
 ### Adding current user to www-data group
 
@@ -137,10 +129,25 @@ Configz
 sudo adduser $LOGNAME www-data
 ```
 
-### Add some empty files to models
+Update installed stack
+----------------------
 
 ```
-cd /home/[YOUR_NAME]/Modèles
-
-touch "new_file_CSS.css" && touch "new_file_HTML.html" && touch "new_file_JS.js" && touch "new_file_Markdown.md" && touch "new_file_PHP.php"
+sudo gem update
+sudo composer self-update
 ```
+
+Help and resources
+------------------
+
+[Ubuntu setup](http://gorails.com/setup/ubuntu)
+
+Other
+-----
+
+* personnal projects with VHost
+* apache2 config
+* git config
+* dot-files
+* virtual boxes
+* chrome with some extensions
