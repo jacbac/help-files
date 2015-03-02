@@ -16,7 +16,6 @@ sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo add-apt-repository -y ppa:birdie-team/stable
 
 sudo apt-get update
 ```
@@ -239,4 +238,3 @@ Other
 -----
 
 * Update if needed `/etc/hosts` and add personnal projects VHost in `/etc/apache2/sites-available`...
-
