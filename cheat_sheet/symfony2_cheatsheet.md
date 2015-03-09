@@ -6,6 +6,7 @@ Bundles
 
 * [A Symfony2 bundle to help load Doctrine Fixtures with Alice](https://github.com/hautelook/AliceBundle)
 * [LiipImagineBundle](https://github.com/liip/LiipImagineBundle)
+* [Very simple sitemap generation](http://enarion.net/programming/php/symfony2/xml-sitemaps/)
 
 Helpers & Librairies
 --------------------
