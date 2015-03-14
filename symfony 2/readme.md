@@ -6,6 +6,7 @@ Bundles
 
 * [A Symfony2 bundle to help load Doctrine Fixtures with Alice](https://github.com/hautelook/AliceBundle)
 * [LiipImagineBundle](https://github.com/liip/LiipImagineBundle)
+* [Very simple sitemap generation](http://enarion.net/programming/php/symfony2/xml-sitemaps/)
 
 Helpers & Librairies
 --------------------
@@ -21,3 +22,8 @@ Dependency Injection
 
 [Bad practice with setter injection ?](http://richardmiller.co.uk/2014/03/12/avoiding-setter-injection/), see also [SF2 doc about injections types](http://symfony.com/doc/current/components/dependency_injection/types.html)
 * Tags : {'DI', 'setter', 'DI types'}
+
+Configurations
+--------------
+
+[Avoid coupling applications to environnement](http://richardmiller.co.uk/2013/05/28/symfony2-avoiding-coupling-applications-to-the-environment/)
