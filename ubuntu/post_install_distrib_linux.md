@@ -10,7 +10,7 @@ sudo apt-get update && sudo apt-get upgrade
 PPAs
 ----
 
-```
+```shell
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:webupd8team/java
@@ -51,7 +51,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &
 
 * `enpass`: secured passwords manager
 ```
-cd <download_directory>
+cd /path_to/download_directory
 chmod +x EnpassInstaller
 sudo apt-get install libxss1
 ./EnpassInstaller
@@ -150,7 +150,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 then update .vimrc with `dot-files` config exemple
 ```
 
-* `YouCompletMe`:
+* `YouCompleteMe`:
 ```
 sudo apt-get install build-essential cmake python-dev
 cd ~/.vim/bundle/YouCompleteMe
@@ -165,15 +165,17 @@ update .gitconfig with `dot-files` config exemple
 
 ### Sublime-Text 3
 
-* [Install package control](https://packagecontrol.io/installation)
+* [Install Package control](https://packagecontrol.io/installation)
 * [Plugin Side​Bar​Enhancements](https://packagecontrol.io/packages/SideBarEnhancements)
 * [Plugin Alignment](https://packagecontrol.io/packages/Alignment)
 * [Plugin Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
 * [Plugin Git​Gutter](https://packagecontrol.io/packages/GitGutter)
 * [Plugin Phpcs](https://packagecontrol.io/packages/Phpcs)
-
+* [Plugin Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
 * [Syntax Highlighting LESS](https://packagecontrol.io/packages/LESS)
 * [Syntax Highlighting Behat](https://packagecontrol.io/packages/Behat)
+* [Syntax Highlighting Markdown](https://packagecontrol.io/packages/Markdown%20Extended)
+* [Theme Monokai Extended](https://packagecontrol.io/packages/Monokai%20Extended)
 
 ```
 update User Preferences.sublime-settings with `dot-files` config exemple
