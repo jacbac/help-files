@@ -136,6 +136,15 @@ set
 sudo service apache2 restart
 ```
 
+* `phpunit`:
+```
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
+phpunit --version
+    PHPUnit x.y.z by Sebastian Bergmann and contributors.
+```
+
 * `rails` with `ruby`: [Look at this setup](https://gorails.com/setup/ubuntu/14.10)
 
 
