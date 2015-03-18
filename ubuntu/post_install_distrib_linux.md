@@ -29,6 +29,7 @@ Basic tools
 * `sublime-text-installer`: sublime-text 3
 * `oracle-java8-installer`: official Java installer
 * `xpad`: post-it
+* `htop`: linux process viewer
 
 ```
 sudo apt-get install vlc gimp bleachbit oracle-java8-installer xpad htop
@@ -240,6 +241,7 @@ Update installed stack
 
 * packages: `sudo apt-get update`
 * composer: `sudo composer self-update`
+* phpunit: `sudo phpunit --self-update`
 * php-cs-fixer: `sudo php-cs-fixer self-update`
 * pear: `sudo pear channel-update pear.php.net && sudo pear upgrade-all`
 * ruby: `sudo gem update`
