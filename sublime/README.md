@@ -6,7 +6,7 @@ Shortuts
 
 |*Type* |*Shortcut* |
 |-------|-----------|
-| Accès à la console|                          | Ctrl + Shift + P |
+| Accès à la console                           | Ctrl + Shift + P |
 | Accès rapide aux fichiers de projets ouverts | Ctrl + P |
 | Switcher entre projets                       | Ctrl + Alt + P |
 | Sélectionner toutes les occurences           | Alt + F3 |
@@ -36,7 +36,7 @@ Change the top bar tabs with a fancy new ‘save status’ and ‘current work f
 
 ### How to install
 
-Open `Package Control`
-Search `Browse` then `Preferences: Browse Packages`
-Create a new folder called `Theme - Default`
-Extract/copy png's in this folder
+* Open `Package Control`
+* Search `Browse` then `Preferences: Browse Packages`
+* Create a new folder called `Theme - Default`
+* Extract/copy png's in this folder
