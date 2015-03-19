@@ -1,0 +1,618 @@
+<!-------------------------------------------------------------------------------------------------->
+<!--                                                                                              -->
+<!-- This file contains the XBMC mapping of gamepad keys using a                                  -->
+<!-- "Logitech Logitech Cordless RumblePad 2" controller.                                                  -->
+<!--                                                                                              -->
+<!-- -= Benke01's Logitech Logitech Cordless RumblePad 2 configuration v 1.4. =-                           -->
+<!--                                                                                              -->
+<!-- Developed by Benke based on zosky's gamepad configuration v0.1b,                             -->
+<!-- which can be found at: http://zosky.pastebin.com/WXpa4Xfn.                                   -->
+<!-- Big thanks, zosky!                                                                           -->
+<!--                                                                                              -->
+<!-- Tested on XBMC 10.0 running on Windows Vista 64 bit.                                         -->
+<!--                                                                                              -->
+<!-------------------------------------------------------------------------------------------------->
+<!--                                                                                              -->
+<!-- -=[ IMPORTANT ]=-                                                                            -->
+<!-- If you want to use this gamepad configuration file for another                               -->
+<!-- controller, check your xbmc.log file after startup to find out                               -->
+<!-- the name id of your controller. Then replace every name id in                                -->
+<!-- <joystick name="Logitech Logitech Cordless RumblePad 2"> in this file                                 -->
+<!-- with your own controller name.                                                               -->
+<!-- For example:                                                                                 -->
+<!--                                                                                              -->
+<!--   <joystick name="YOUR_CONTROLLER_NAME">                                                     -->
+<!--                                                                                              -->
+<!-- -=[ Configuration ]=-                                                                        -->
+<!--                                                                                              -->
+<!-- The format is:                                                                               -->
+<!--   <joystick name="Logitech Logitech Cordless RumblePad 2">                                            -->
+<!--     <hat id="1" position="up">Up</hat>                                                       -->
+<!--     <button id="6">Right</button>                                                            -->
+<!--     <axis id="2" limit="+1">ScrollUp</axis>                                                  -->
+<!--   </joystick>                                                                                -->
+<!--                                                                                              -->
+<!-- Note that an action can be a built-in function, eg                                           -->
+<!--   <button id="8">XBMC.ActivateWindow(MyMusic)"</button>                                      -->
+<!-- would automatically go to My Music on the press of button 8.                                 -->
+<!--                                                                                              -->
+<!-- Buttons:                                                                                     -->
+<!--      _______            _______                                                              -->
+<!--     / __7__ \          / __8__ \                                                             -->
+<!--     | __5__ |__________| __6__ |                                                             -->
+<!--    /                           \                                                             -->
+<!--   //    |  \  9     10  /  4   \\                                                            -->
+<!--   ||  -=|=-  ___    ___  1   3  ||                                                           -->
+<!--   \\    |  //   \  /   \\  2   //                                                            -->
+<!--    \        |11 |  | 12|       /                                                             -->
+<!--     |       \___/  \___/       |                                                             -->
+<!--     |       |          |       |                                                             -->
+<!--     \      /           \       /                                                             -->
+<!--      \____/             \_____/                                                              -->
+<!--                                                                                              -->
+<!-- Axises:                                                                                      -->
+<!--            *D-pad = L/R = axis id 1, limit +1/-1                                             -->
+<!--            *D-pad = U/D = axis id 2, limit +1/-1                                             -->
+<!--   *Left Thumb Pad = L/R = axis id 1, limit +1/-1                                             -->
+<!--   *Left Thumb Pad = U/D = axis id 2, limit +1/-1                                             -->
+<!--   Right Thumb Pad = L/R = axis id 3, limit +1/-1                                             -->
+<!--   Right Thumb Pad = U/D = axis id 4, limit +1/-1                                             -->
+<!--                                                                                              -->
+<!-- * Logitech Logitech "mode" button will flip position of D-pad and Left                                -->
+<!--   Thumb Pad.                                                                                 -->
+<!--                                                                                              -->
+<!-------------------------------------------------------------------------------------------------->
+<!--                                                                                              -->
+<!-- -=[ Tutorial ]=-                                                                             -->
+<!--                                                                                              -->
+<!-- Dot sequence "..." specifies that more window specific functionality is specified in the     -->
+<!-- "Specific button assignments" section.                                                       -->
+<!--                                                                                              -->
+<!-- D-pad: Orientation                                                                           -->
+<!--   * Video: horizontal: Step Forward/Backward, vertical: BigStep (chapter) Forward/Backward   -->
+<!--   * Music: horizontal: Next/Previous Song                                                    -->
+<!--   * Visualisation: horizontal: Next/Previous Visualisation                                   -->
+<!--                                                                                              -->
+<!-- Button 1: Info (Play in pictures, Highlight in file manager)                                 -->
+<!-- Button 2: Select (Pause in video/music/pictures, Next Calibration in calibration)            -->
+<!-- Button 3: Previous Menu / Close / Stop (Enter in virtual keybord, Shutdown in home)          -->
+<!-- Button 4: Context Menu (OSD in video/music, Rotate in pictures, Cancel in virtual keyboard)  -->
+<!-- Button 5: Playlist(file lists) / Move Up(playlists) (Next Resolution in calibration, ...)    -->
+<!-- Button 7: Toggle Watched(file lists) / Move Down(playlists) (...)                            -->
+<!-- Button 6: Page Up (...)                                                                      -->
+<!-- Button 8: Page Down (...)                                                                    -->
+<!-- Button 9: Player Controls (...)                                                              -->
+<!-- Button 10: Fullscreen (Zoom Normal in pictures, Reset Calibration, ...)                      -->
+<!-- Button 11: Queue(lists) / Delete(playlists) (Queue+Delete in Playlist Editor,                -->
+<!--                                              Codec Info in video, music, pictures)           -->
+<!-- Button 12: Home                                                                              -->
+<!--                                                                                              -->
+<!-- Left thumb pad: horizontal: Fast Forward/Rewind in music/video, vertical: Scroll Up/Down     -->
+<!-- Right thumb pad: horizontal: Seek Forward/Backward, vertical: Volume Up/Down                 -->
+<!--                                                                                              -->
+<!-- -= Specific button assignments: =-                                                           -->
+<!-- Video:                                                                                       -->
+<!--   Button 5: Aspect Ratio                                                                     -->
+<!--   Button 7: Next Audio                                                                       -->
+<!--   Button 6: Show Subtitles                                                                   -->
+<!--   Button 8: Next Subtitle                                                                    -->
+<!--                                                                                              -->
+<!-- Music:                                                                                       -->
+<!--   Button 5: Visualisation List                                                               -->
+<!--   Button 7: Visualisation Setting                                                            -->
+<!--   Button 6: FastForward                                                                      -->
+<!--   Button 8: Rewind                                                                           -->
+<!--                                                                                              -->
+<!-- Pictures:                                                                                    -->
+<!--   Button 5: Zoom In                                                                          -->
+<!--   Button 7: Zoom Out                                                                         -->
+<!--   Button 6: Next Picture                                                                     -->
+<!--   Button 8: Previous Picture                                                                 -->
+<!--                                                                                              -->
+<!-- File manager:                                                                                -->
+<!--   Button 5: Rename                                                                           -->
+<!--   Button 7: Move                                                                             -->
+<!--                                                                                              -->
+<!-- Virtual keyboard:                                                                            -->
+<!--   Button 5: Cursor Left                                                                      -->
+<!--   Button 6: Cursor Right                                                                     -->
+<!--   Button 8: Backspace                                                                        -->
+<!--   Button 9: Shift                                                                            -->
+<!--   Button 10: Symbols                                                                         -->
+<!--                                                                                              -->
+<!-------------------------------------------------------------------------------------------------->
+
+<keymap>
+  <global>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <hat id="1" position="up">Up</hat>
+      <hat id="1" position="down">Down</hat>
+      <hat id="1" position="left">Left</hat>
+      <hat id="1" position="right">Right</hat>
+
+      <button id="1">Info</button>
+      <button id="2">Select</button>
+      <button id="3">PreviousMenu</button>
+      <button id="4">ContextMenu</button>
+
+      <!--<button id="5"></button>--> <!-- UNASSIGNED -->
+      <!--<button id="7"></button>--> <!-- UNASSIGNED -->
+
+      <button id="6">PageUp</button>
+      <button id="8">PageDown</button>
+
+      <button id="9">ActivateWindow(PlayerControls)</button> <!-- displays player controls when playing video/music -->
+      <button id="10">FullScreen</button> <!-- is switching between video/video list OR visualisation/music list -->
+
+      <!--<button id="11"></button>--> <!-- UNASSIGNED (used as "Queue" in libraries, "Delete" in playlists and as "CodecInfo" for media) -->
+      <button id="12">XBMC.ActivateWindow(Home)</button>
+
+      <!-- Left thumb pad horizontal/vertical -->
+      <!--<axis limit="-1" id="1"></axis>--> <!-- UNASSIGNED -->
+      <!--<axis limit="+1" id="1"></axis>--> <!-- UNASSIGNED -->
+      <axis limit="-1" id="2">ScrollUp</axis>
+      <axis limit="+1" id="2">ScrollDown</axis>
+
+      <!-- Right thumb pad horizontal/vertical-->
+      <axis limit="+1" id="3">AnalogSeekForward</axis> <!-- (could maybe instead be set exclusively in video/music/picture windows) -->
+      <axis limit="-1" id="3">AnalogSeekBack</axis>
+      <axis limit="+1" id="4">VolumeDown</axis>
+      <axis limit="-1" id="4">VolumeUp</axis>
+
+      <!-- UNASSIGNED: ParentDir -->
+      <!-- UNASSIGNED: Mute -->
+      <!-- UNASSIGNED: Screenshot -->
+      <!-- UNASSIGNED: ToggleFullScreen -->
+      <!-- UNASSIGNED: FirstPage -->
+      <!-- UNASSIGNED: LastPage -->
+      <!-- UNASSIGNED: ActivateWindow(Favourites) -->
+      <!-- UNASSIGNED: ActivateWindow(MyPrograms) -->
+      <!-- UNASSIGNED: XBMC.ActivateWindow(MyMusic) -->
+      <!-- UNASSIGNED: XBMC.ActivateWindow(ShutdownMenu) -->
+      <!-- UNASSIGNED: XBMC.ShutDown() (can be reached from Home menu) -->
+    </joystick>
+  </global>
+
+<!-- ############### VIDEO ############### --->
+
+<!-- Library Windows -->
+  <MyVideoFiles>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">Playlist</button>
+      <button id="7">ToggleWatched</button>
+
+      <button id="11">Queue</button>
+    </joystick>
+  </MyVideoFiles>
+
+  <MyVideoLibrary>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">Playlist</button>
+      <button id="7">ToggleWatched</button>
+
+      <button id="11">Queue</button>
+      <!-- UNASSIGNED: Delete -->
+    </joystick>
+  </MyVideoLibrary>
+
+  <MyVideoPlaylist>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">MoveItemUp</button>
+      <button id="7">MoveItemDown</button>
+
+      <button id="11">Delete</button>
+    </joystick>
+  </MyVideoPlaylist>
+
+  <VideoBookmarks>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </VideoBookmarks>
+
+<!-- OSD Dialogs -->
+  <VideoOSD>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+      <button id="4">Close</button> <!-- same button as for opening <VideoOSD> -->
+      <button id="11">CodecInfo</button>
+    </joystick>
+  </VideoOSD>
+
+  <OSDVideoSettings>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+      <button id="11">CodecInfo</button>
+    </joystick>
+  </OSDVideoSettings>
+
+<!-- Information Dialogs -->
+  <MovieInformation>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">Close</button> <!-- same button as for opening Info -->
+      <button id="3">Close</button>
+    </joystick>
+  </MovieInformation>
+
+  <FullscreenInfo>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">Close</button> <!-- same button as for opening Info -->
+      <button id="3">Close</button>
+      <button id="4">OSD</button>
+
+      <button id="11">CodecInfo</button>
+    </joystick>
+  </FullscreenInfo>
+
+<!-- Menus -->
+  <VideoMenu>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="4">OSD</button> <!-- Video On-Screen-Display (VideoOSD) dialog -->
+
+      <button id="5">AspectRatio</button>
+
+      <button id="6">ShowSubtitles</button>
+      <button id="8">NextSubtitle</button>
+
+      <button id="11">CodecInfo</button>
+
+      <!-- UNASSIGNED: BigStepForward -->
+      <!-- UNASSIGNED: BigStepBack -->
+      <!-- UNASSIGNED: AudioDelay -->
+    </joystick>
+  </VideoMenu>
+
+<!-- Watching -->
+  <FullscreenVideo>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <hat id="1" position="up">BigStepForward</hat>
+      <hat id="1" position="down">BigStepBack</hat>
+      <hat id="1" position="left">StepBack</hat>
+      <hat id="1" position="right">StepForward</hat>
+
+      <button id="2">Pause</button>
+      <button id="3">Stop</button>
+      <button id="4">OSD</button> <!-- Video On-Screen-Display (VideoOSD) dialog -->
+
+      <button id="5">AspectRatio</button>
+      <button id="7">AudioNextLanguage</button>
+
+      <button id="6">ShowSubtitles</button>
+      <button id="8">NextSubtitle</button>
+
+      <button id="11">CodecInfo</button>
+
+      <!-- Left thumb pad horizontal/vertical -->
+      <axis limit="+1" id="1">AnalogFastForward</axis>
+      <axis limit="-1" id="1">AnalogRewind</axis>
+
+      <!-- UNASSIGNED: SmallStepBack -->
+      <!-- UNASSIGNED: AudioDelay -->
+    </joystick>
+  </FullscreenVideo>
+
+<!-- ############### MUSIC ############### -->
+
+<!-- Library Windows -->
+  <MyMusicFiles>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">Playlist</button>
+      <button id="11">Queue</button>
+    </joystick>
+  </MyMusicFiles>
+
+  <MyMusicLibrary>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">Playlist</button>
+      <button id="11">Queue</button>
+    </joystick>
+  </MyMusicLibrary>
+
+  <MyMusicPlaylist>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">MoveItemUp</button>
+      <button id="7">MoveItemDown</button>
+
+      <button id="11">Delete</button>
+    </joystick>
+  </MyMusicPlaylist>
+
+  <MyMusicPlaylistEditor>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="5">MoveItemUp</button>
+      <button id="7">MoveItemDown</button>
+
+      <!-- the same button can be assigned for two functions as they only work in different windows areas -->
+      <button id="11">Queue</button>
+      <button id="11">Delete</button>
+    </joystick>
+  </MyMusicPlaylistEditor>
+
+<!-- OSD Dialogs -->
+  <MusicOSD>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+      <button id="4">Close</button> <!-- same button as for opening MusicOSD -->
+
+      <button id="5">ActivateWindow(VisualisationPresetList)</button> <!-- displayes list of visualisations -->
+      <button id="7">ActivateWindow(VisualisationSettings)</button> <!-- displays visualisation setting -->
+
+      <button id="6">FastForward</button> <!-- plays music backwards in different speeds -->
+      <button id="8">Rewind</button>
+
+      <button id="11">CodecInfo</button>
+
+      <!-- UNASSIGNED: ActivateWindow(MusicPlaylist) (use Close + PreviousMenu) -->
+    </joystick>
+  </MusicOSD>
+
+  <OSDAudioSettings>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+      <button id="11">CodecInfo</button>
+    </joystick>
+  </OSDAudioSettings>
+
+<!-- Information Dialogs -->
+  <MusicInformation>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">Close</button> <!-- same button as for opening Info (not working for dialog "SongInformation") -->
+      <button id="3">Close</button>
+    </joystick>
+  </MusicInformation>
+
+<!-- Visualisation Setting Dialogs -->
+  <VisualisationSettings>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </VisualisationSettings>
+
+  <VisualisationPresetList>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <hat id="1" position="left">SkipPrevious</hat> <!-- previous song -->
+      <hat id="1" position="right">SkipNext</hat>
+
+      <button id="3">Close</button>
+
+      <button id="5">ActivateWindow(VisualisationPresetList)</button> <!-- displayes list of visualisations -->
+
+      <button id="6">FastForward</button> <!-- plays music backwards in different speeds -->
+      <button id="8">Rewind</button>
+
+      <button id="11">CodecInfo</button>
+
+      <!-- UNASSIGNED: ActivateWindow(MusicPlaylist) (use Close + PreviousMenu) -->
+    </joystick>
+  </VisualisationPresetList>
+
+<!-- Listening -->
+  <Visualisation>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <hat id="1" position="up">NextPreset</hat> <!-- next visualisation -->
+      <hat id="1" position="down">PreviousPreset</hat>
+      <hat id="1" position="left">SkipPrevious</hat> <!-- previous song -->
+      <hat id="1" position="right">SkipNext</hat>
+
+      <button id="2">Pause</button>
+      <button id="3">Stop</button>
+      <button id="4">XBMC.ActivateWindow(MusicOSD)</button> <!-- Music On-Screen-Display dialog (MusicOSD) -->
+
+      <button id="5">ActivateWindow(VisualisationPresetList)</button> <!-- displayes list of visualisations -->
+      <button id="7">ActivateWindow(VisualisationSettings)</button> <!-- displays visualisation setting -->
+
+      <button id="6">FastForward</button> <!-- plays music backwards in different speeds -->
+      <button id="8">Rewind</button>
+
+      <button id="11">CodecInfo</button>
+
+      <!-- Left thumb pad horizontal/vertical -->
+      <axis limit="+1" id="1">AnalogFastForward</axis>
+      <axis limit="-1" id="1">AnalogRewind</axis>
+      <!--<axis limit="+1" id="2">SmallStepBack</axis>-->
+      <!--<axis limit="-1" id="2">StepForward</axis>--> <!-- "SmallStepForward" does not exist -->
+
+      <!-- UNASSIGNED: IncreaseRating -->
+      <!-- UNASSIGNED: DecreaseRating -->
+      <!-- UNASSIGNED: LockPreset -->
+      <!-- UNASSIGNED: ActivateWindow(MusicPlaylist) (use PreviousMenu)-->
+    </joystick>
+  </Visualisation>
+
+<!-- ############### PICTURE ############### -->
+
+<!-- Information Dialogs -->
+  <PictureInfo>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">Close</button> <!-- same button as for opening Info -->
+      <button id="2">Pause</button>
+      <button id="3">Close</button>
+
+      <button id="6">NextPicture</button>
+      <button id="8">PreviousPicture</button>
+    </joystick>
+  </PictureInfo>
+
+<!-- Setting Dialogs -->
+  <ScreenCalibration>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="2">NextCalibration</button> <!-- (replaces "Select" key which is also done in keyboard.xml) -->
+
+      <button id="5">NextResolution</button>
+
+      <button id="10">ResetCalibration</button> <!-- (same button as "ZoomNormal" in <SlideShow>) -->
+    </joystick>
+  </ScreenCalibration>
+
+<!-- Watching -->
+  <SlideShow>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <!-- D-pad reserved for zoom orientation -->
+
+      <button id="1">Play</button> <!-- replaces "Info" key which does not work with Pictures -->
+      <button id="2">Pause</button>
+      <button id="3">Stop</button>
+      <button id="4">Rotate</button>
+
+      <button id="5">ZoomIn</button>
+      <button id="7">ZoomOut</button>
+
+      <button id="6">NextPicture</button>
+      <button id="8">PreviousPicture</button>
+
+      <button id="10">ZoomNormal</button>
+
+      <button id="11">CodecInfo</button>
+
+      <!-- REPLACED: Info (seems not to be used) -->
+      <!-- UNASSIGNED: Stop (same as "PreviousMenu") -->
+      <!-- UNASSIGNED: AnalogMove ("AnalogMove" during zoom does not work. One axis could not be assigned to a single action.) -->
+    </joystick>
+  </SlideShow>
+
+<!-- ############### COMMON DIALOGS ############### --->
+
+  <VirtualKeyboard>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <!--<button id="1"></button>--> <!-- UNASSIGNED -->
+      <button id="3">Enter</button> <!-- Accepts input characters -->
+      <button id="4">Close</button> <!-- Cancel input characters -->
+
+      <button id="5">CursorLeft</button> <!-- moves the text marking cursor -->
+
+      <button id="6">CursorRight</button>
+      <button id="8">BackSpace</button>
+
+      <button id="9">Shift</button> <!-- switches between upper and lower case characters -->
+      <button id="10">Symbols</button> <!-- switches keyboard symbols -->
+    </joystick>
+  </VirtualKeyboard>
+
+  <SelectDialog>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </SelectDialog>
+
+  <ContextMenu>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </ContextMenu>
+
+  <FileStackingDialog>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </FileStackingDialog>
+
+  <PlayerControls>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </PlayerControls>
+
+  <Favourites>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </Favourites>
+
+<!-- ############### SYSTEM DIALOGS ############### --->
+
+  <Home>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">XBMC.ShutDown()</button>
+    </joystick>
+  </Home>
+
+  <Weather>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="3">PreviousMenu</button>
+    </joystick>
+  </Weather>
+
+  <MyFiles>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">Highlight</button>
+
+      <button id="5">Rename</button>
+      <button id="7">Move</button>
+
+      <button id="11">Delete</button>
+    </joystick>
+  </MyFiles>
+
+  <GUICalibration>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="2">NextCalibration</button> <!-- (replaces "Select" key which is also done in keyboard.xml) -->
+      <button id="10">ResetCalibration</button> <!-- (same button as "ZoomNormal" in <SlideShow>) -->
+    </joystick>
+  </GUICalibration>
+
+  <Scripts>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">XBMC.ActivateWindow(ScriptsDebugInfo)</button>
+    </joystick>
+  </Scripts>
+
+  <ScriptsDebugInfo>
+    <joystick name="Logitech Logitech Cordless RumblePad 2">
+      <button id="1">Info</button> <!-- clears debug python info -->
+    </joystick>
+  </ScriptsDebugInfo>
+
+<!-- ############### MENU, SETTING & SYSTEM DIALOGS ############### --->
+
+<!-- Empty Windows represents the default keyboard layouts where "PreviousDir" were replaced by "PreviousMenu". Not necessary here. -->
+
+  <Settings>
+  </Settings>
+
+  <MyProgramsSettings>
+  </MyProgramsSettings>
+
+  <MyWeatherSettings>
+  </MyWeatherSettings>
+
+  <MyMusicSettings>
+  </MyMusicSettings>
+
+  <SystemSettings>
+  </SystemSettings>
+
+  <MyVideosSettings>
+  </MyVideosSettings>
+
+  <NetworkSettings>
+  </NetworkSettings>
+
+  <AppearanceSettings>
+  </AppearanceSettings>
+
+  <Profiles>
+  </Profiles>
+
+  <systeminfo>
+  </systeminfo>
+
+  <shutdownmenu>
+  </shutdownmenu>
+
+  <submenu>
+  </submenu>
+
+  <LockSettings>
+    <!-- Default keyboard layouts changes default "PreviousMenu" to "Close" and "PreviousDir" to "PreviousMenu". Seems unnecessary and probably is a bug. -->
+  </LockSettings>
+
+  <ProfileSettings>
+    <!-- Default keyboard layouts changes default "PreviousMenu" to "Close" and "PreviousDir" to "PreviousMenu". Seems unnecessary and probably is a bug. -->
+  </ProfileSettings>
+
+  <Teletext>
+    <joystick name="Logitech Logitech Logitech Logitech Cordless RumblePad 2">
+      <button id="3">Close</button>
+    </joystick>
+  </Teletext>
+</keymap>

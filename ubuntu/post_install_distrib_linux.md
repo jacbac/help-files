@@ -1,7 +1,7 @@
 Post-Install Ubuntu Gnome 14.10
 ===============================
 
-After you install brand new Ubuntu Gnome 14.10, the first thing you need to do is to update repositories and make sure you have the latest updates installed.
+After you install brand new Ubuntu Gnome 14.10 (OK 2015/03/01), the first thing you need to do is to update repositories and make sure you have the latest updates installed.
 
 ```
 sudo apt-get update && sudo apt-get upgrade
@@ -86,7 +86,7 @@ sudo apt-get install vim curl tree git apache2 mysql-server php5 libapache2-mod-
 sudo apt-get install zsh
 chsh -s /bin/zsh
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-then update .zshrc with `dot-files` config exemple
+then update .zshrc with `dot-files` config example
 reboot if needed
 ```
 
@@ -157,7 +157,7 @@ Config
 * `Vundle`:
 ```
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-then update .vimrc with `dot-files` config exemple
+then update .vimrc with `dot-files` config example
 ```
 
 * `YouCompleteMe`:
@@ -170,7 +170,7 @@ cd ~/.vim/bundle/YouCompleteMe
 ### Git
 
 ```
-update .gitconfig with `dot-files` config exemple
+update .gitconfig with `dot-files` config example
 ```
 
 ### Sublime-Text 3
@@ -184,12 +184,14 @@ update .gitconfig with `dot-files` config exemple
 * [Plugin Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
 * [Syntax Highlighting LESS](https://packagecontrol.io/packages/LESS)
 * [Syntax Highlighting Behat](https://packagecontrol.io/packages/Behat)
+* [Syntax Highlighting Twig](https://packagecontrol.io/packages/Twig)
 * [Syntax Highlighting Markdown](https://packagecontrol.io/packages/Markdown%20Extended)
 * [Theme Monokai Extended](https://packagecontrol.io/packages/Monokai%20Extended)
 
 ```
-update User Preferences.sublime-settings with `dot-files` config exemple
-update User phpcs.sublime-settings with `dot-files` config exemple
+update User Preferences.sublime-settings with `dot-files` config example
+update User phpcs.sublime-settings with `dot-files` config example
+update sublime-text close/save tabs buttons with new pngs. See `help-files/sublime` example
 ```
 
 ### MySQL
