@@ -19,9 +19,8 @@ Doctrine 2
 
 * [Doctrine 2 DQL official](http://doctrine-orm.readthedocs.org/en/latest/reference/dql-doctrine-query-language.html)
 * [Doctrine 2 QueryBuilder official](http://doctrine-orm.readthedocs.org/en/latest/reference/query-builder.html)
-* [A post from Anne about doctrine repositories ](http://dev.imagineeasy.com/post/44139111915/taiming-repository-classes-in-doctrine-with-the)
-* [With a response from beberlai and use of the specifiation pattern](https://github.com/beberlei/whitewashing.de/blob/master/2013/03/04/doctrine_repositories.rst)
-* [And an alternative by Luis Cordova](http://www.craftitonline.com/2014/08/alternative-method-to-tame-symfonydoctrine-repositories/)
+
+* [A post from Anne about doctrine repositories ](http://dev.imagineeasy.com/post/44139111915/taiming-repository-classes-in-doctrine-with-the), with [a response from beberlai and use of the specifiation pattern](https://github.com/beberlei/whitewashing.de/blob/master/2013/03/04/doctrine_repositories.rst), and [an alternative by Luis Cordova](http://www.craftitonline.com/2014/08/alternative-method-to-tame-symfonydoctrine-repositories/)
 * [Some Doctrine 2 best pratices by UVD](http://www.uvd.co.uk/blog/some-doctrine-2-best-practices/)
 * [How Weavora organize their Doctrine 2 repositories](http://weavora.com/blog/2013/08/23/how-we-organize-doctrine2-repositories/)
 
