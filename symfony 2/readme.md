@@ -6,7 +6,7 @@ General / Mixed
 
 * [Association Francophone des Utilisateurs de Symfony : "articles" de l'avent (FR, 2013)](http://afsy.fr/avent/2013)
 * [Welcome to the bundle (EN)](http://welcometothebundle.com/)
-* [William Durand blog](http://williamdurand.fr/)
+* [William Durand's blog (EN)](http://williamdurand.fr/) and the [older french one (FR)](http://willdurand.fr/)
 
 About Coding method
 -------------------
