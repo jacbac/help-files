@@ -33,4 +33,14 @@ Dependency Injection
 Configurations
 --------------
 
-[Avoid coupling applications to environnement](http://richardmiller.co.uk/2013/05/28/symfony2-avoiding-coupling-applications-to-the-environment/)
+* [Avoid coupling applications to environnement](http://richardmiller.co.uk/2013/05/28/symfony2-avoiding-coupling-applications-to-the-environment/)
+
+REST API
+-------
+
+* [Rest API the right way](http://williamdurand.fr/2012/08/02/rest-apis-with-symfony2-the-right-way/)
+
+SF Console
+----------
+
+* [SF console alias](http://level7systems.co.uk/en/using-symfony2-console-the-right-way/)
