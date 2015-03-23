@@ -46,6 +46,7 @@ Git workflow
 * [AOE single branch git workflow (EN, 2014)](http://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow)
 * [Gitready pull rebase technique (EN, 2009)](http://gitready.com/advanced/2009/02/11/pull-with-rebase.html)
 * [Herve Guetin Agile Flow (FR, 2014)](http://www.herveguetin.com/magento/agile-flow.html)
+* [William Durand branching model (EN, 2012)](http://williamdurand.fr/2012/01/17/my-git-branching-model/)
 
 Git useful commands
 -------------------
