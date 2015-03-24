@@ -11,8 +11,10 @@ General / Mixed
 About Coding method
 -------------------
 
-* [Coding the greek way with calisthenics by William Durand (EN, 2013)](http://williamdurand.fr/2013/06/03/object-calisthenics/)
+* [Coding the greek way with calisthenics method by William Durand (EN, 2013)](http://williamdurand.fr/2013/06/03/object-calisthenics/)
 * [From STUPID to SOLID code by William Durand (EN, 2013)](http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code)
+* [Votre code est STUPID ? Rendez le SOLID ! (FR, 2013)](http://afsy.fr/avent/2013/02-principes-stupid-solid-poo)
+* [SOLID First (EN, 2015)](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 * [And a complementray point of view from François Zaninotto (EN, 2013)](http://www.redotheweb.com/2013/06/04/you-should-write-ugly-code.html)
 
 About Doctrine 2
