@@ -180,6 +180,7 @@ update .gitconfig with `dot-files` config example
 * [Plugin Alignment](https://packagecontrol.io/packages/Alignment)
 * [Plugin Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
 * [Plugin Git​Gutter](https://packagecontrol.io/packages/GitGutter)
+* [Plugin PHPNamespace](https://packagecontrol.io/packages/PhpNamespace)
 * [Plugin Phpcs](https://packagecontrol.io/packages/Phpcs)
 * [Plugin Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
 * [Syntax Highlighting LESS](https://packagecontrol.io/packages/LESS)
