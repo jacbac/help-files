@@ -4,6 +4,9 @@ Git config
 ```
 git config --global user.name "Your Name"
 git config --global user.email name@email.com
+
+# show all untracked files in parent directories and not only the untrackend directories
+git config --global status.showUntrackedFiles all
 ```
 
 Git tools

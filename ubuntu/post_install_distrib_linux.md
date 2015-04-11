@@ -201,6 +201,17 @@ update sublime-text close/save tabs buttons with new pngs. See `help-files/subli
 sudo mysql_secure_installation
 ```
 
+### PHPMyAdmin
+
+```
+sudo cp /usr/share/phpmyadmin/config.sample.inc.php /usr/share/phpmyadmin/config.inc.php
+sudo vim /usr/share/phpmyadmin/config.inc.php
+
+uncomment lines :
+
+$cfg['MaxRows'] = 50;
+```
+
 ### Adding current user to www-data group
 
 ```
