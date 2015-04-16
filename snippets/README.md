@@ -1,6 +1,16 @@
 Snippets
 ========
 
+Convert line endings
+--------------------
+
+### Dos => Unix
+
+```
+sudo apt-get install dos2unix
+find . -type f -exec dos2unix {} \;
+```
+
 Javascript
 ----------
 
