@@ -128,6 +128,16 @@ curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install -y nodejs
 ```
 
+* `gulp` (global):
+```
+sudo npm install -g gulp
+```
+
+* `grunt` (global):
+```
+sudo npm install -g grunt-cli
+```
+
 * `xdebug`:
 ```
 sudo pecl install xdebug
