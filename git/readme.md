@@ -79,3 +79,13 @@ Delete a remote branch
 ```
 git push origin --delete <branchName>
 ```
+
+Associer un message à un stash
+```
+git stash save "your message here"
+```
+
+Supprimer tous les stash précédemment enregistrés
+```
+git stash clear
+```
