@@ -1,6 +1,8 @@
 Elastic Stack
 =============
 
+Former Elasticsearch.
+
 Rapid Installation
 ------------------
 
@@ -32,6 +34,11 @@ Launch & Stop
 ```
 
 * Stop ES with ``
+
+Search Problems
+---------------
+
+* [Escaping problems and official solution in Elastic](http://www.elastic.co/guide/en/elasticsearch/guide/master/char-filters.html)
 
 Plugins
 -------
