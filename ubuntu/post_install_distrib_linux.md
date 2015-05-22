@@ -81,6 +81,8 @@ Dev tools
 sudo apt-get install vim curl tree git apache2 mysql-server php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick php5-dev make build-essential filezilla mysql-workbench
 ```
 
+### Terminal / Shell
+
 * `zsh` with `oh-my-zsh`:
 ```
 sudo apt-get install zsh
@@ -90,10 +92,77 @@ then update .zshrc with `dot-files` config example
 reboot if needed
 ```
 
-* `composer`:
+### Packages managers
+
+* [composer](https://getcomposer.org/):
 ```
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+```
+
+* [nodejs](https://nodejs.org/):
+```
+# Note the new setup script name for Node.js v0.12
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install -y nodejs
+```
+
+### Scaffolding Tools
+
+* [Yeoman](http://yeoman.io/) (global):
+```
+$ [sudo] npm install -g yo
+```
+
+### Task Runners / System Builders
+
+* [gulp](http://gulpjs.com/) (global):
+```
+$ [sudo] npm install -g gulp
+```
+
+* [brunch](http://brunch.io/) (global):
+```
+$ [sudo] npm install -g brunch
+```
+
+* [grunt](http://gruntjs.com/) (global):
+```
+$ [sudo] npm install -g grunt-cli
+```
+
+### CSS Extension Languages
+
+* [LESS](http://lesscss.org/)
+```
+$ [sudo] npm install -g less
+```
+
+* [SASS](http://sass-lang.com/)
+```
+$ [sudo] npm install -g node-sass
+```
+
+### Debugging Tools
+
+* `xdebug`:
+```
+sudo pecl install xdebug
+sudo vim /etc/php5/apache2/php.ini
+set
+    zend_extension="/usr/lib/php5/20121212/xdebug.so"
+sudo service apache2 restart
+```
+
+### Testing Tools / Linter
+
+* `phpunit`:
+```
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
+phpunit --version
+    PHPUnit x.y.z by Sebastian Bergmann and contributors.
 ```
 
 * `phpcs` (PHP Code Sniffer):
@@ -122,46 +191,9 @@ sudo pear channel-discover 'pear.phpmd.org' && sudo pear channel-discover 'pear.
 sudo pear install --alldeps 'phpmd/PHP_PMD'
 ```
 
-* `nodejs`:
-```
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install -y nodejs
-```
+### Others Languages & Frameworks
 
-* `sass`
-```
-gem install sass
-```
-
-* `gulp` (global):
-```
-sudo npm install -g gulp
-```
-
-* `grunt` (global):
-```
-sudo npm install -g grunt-cli
-```
-
-* `xdebug`:
-```
-sudo pecl install xdebug
-sudo vim /etc/php5/apache2/php.ini
-set
-    zend_extension="/usr/lib/php5/20121212/xdebug.so"
-sudo service apache2 restart
-```
-
-* `phpunit`:
-```
-wget https://phar.phpunit.de/phpunit.phar
-chmod +x phpunit.phar
-sudo mv phpunit.phar /usr/local/bin/phpunit
-phpunit --version
-    PHPUnit x.y.z by Sebastian Bergmann and contributors.
-```
-
-* `rails` with `ruby`: [Look at this setup](https://gorails.com/setup/ubuntu/14.10)
+* `ruby` with `rails`: [Look at this setup](https://gorails.com/setup/ubuntu/14.10)
 
 
 Config
@@ -270,11 +302,11 @@ Update installed stack
 
 * packages: `sudo apt-get update`
 * composer: `sudo composer self-update`
+* npm: `sudo npm install npm -g`
 * phpunit: `sudo phpunit --self-update`
 * php-cs-fixer: `sudo php-cs-fixer self-update`
 * pear: `sudo pear channel-update pear.php.net && sudo pear upgrade-all`
 * ruby: `sudo gem update`
-
 
 Other
 -----
