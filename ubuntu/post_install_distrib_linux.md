@@ -229,6 +229,9 @@ update .gitconfig with `dot-files` config example
 * [Plugin Git​Gutter](https://packagecontrol.io/packages/GitGutter)
 * [Plugin PHPNamespace](https://packagecontrol.io/packages/PhpNamespace)
 * [Plugin Phpcs](https://packagecontrol.io/packages/Phpcs)
+* [Plugin SublimeLinter-php](https://packagecontrol.io/packages/SublimeLinter-php)
+* [Plugin SublimeLinter-jshint](https://packagecontrol.io/packages/SublimeLinter-jshint). Prerequisite: `npm install -g jshint`
+* [Plugin SublimeLinter-csslint](https://packagecontrol.io/packages/SublimeLinter-csslint). Prerequisite: `npm install -g csslint`
 * [Plugin Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
 * [Syntax Highlighting LESS](https://packagecontrol.io/packages/LESS)
 * [Syntax Highlighting Behat](https://packagecontrol.io/packages/Behat)
@@ -240,6 +243,8 @@ update .gitconfig with `dot-files` config example
 update User Preferences.sublime-settings with `dot-files` config example
 update User phpcs.sublime-settings with `dot-files` config example
 update sublime-text close/save tabs buttons with new pngs. See `help-files/sublime` example
+update gutter themes: open Command Palette, choose `SublimeLinter: Choose Gutter Theme`, select `Circle`.
+update mark style: open Command Palette, choose `Sublime Linter: Choose Mark Style`, select `Outline`.
 ```
 
 ### MySQL
