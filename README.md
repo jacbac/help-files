@@ -3,8 +3,8 @@ help-files
 
 Allways WIP repository
 
-Contains :
+## Contains
 
-* rpi install & help files
-* linux / Ubuntu distrib install & help files
+* Linux / Ubuntu distrib install & help files
 * other various files
+* rpi install & help files
