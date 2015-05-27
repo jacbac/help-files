@@ -1,8 +1,7 @@
 PHP Stack
 =========
 
-[behat]()
-[phpspec]()
-[symfony]()
-
-[travis]()
+* [behat]()
+* [phpspec]()
+* [symfony]()
+* [travis]()
