@@ -232,8 +232,10 @@ update .gitconfig with `dot-files` config example
 * [Plugin SublimeLinter-php](https://packagecontrol.io/packages/SublimeLinter-php)
 * [Plugin SublimeLinter-jshint](https://packagecontrol.io/packages/SublimeLinter-jshint). Prerequisite: `npm install -g jshint`
 * [Plugin SublimeLinter-csslint](https://packagecontrol.io/packages/SublimeLinter-csslint). Prerequisite: `npm install -g csslint`
+* [Plugin SublimeLinter-json](https://packagecontrol.io/packages/SublimeLinter-json)
 * [Plugin Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
 * [Syntax Highlighting LESS](https://packagecontrol.io/packages/LESS)
+* [Syntax Highlighting SASS](https://packagecontrol.io/packages/Sass)
 * [Syntax Highlighting Behat](https://packagecontrol.io/packages/Behat)
 * [Syntax Highlighting Twig](https://packagecontrol.io/packages/Twig)
 * [Syntax Highlighting Markdown](https://packagecontrol.io/packages/Markdown%20Extended)
