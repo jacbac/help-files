@@ -1,10 +1,13 @@
 Jenkins
 =======
 
-* [Jenkins install by Pascal Martin (FR, 2011)](http://blog.pascal-martin.fr/post/integration-continue-jenkins-installation-configuration.html) and [the second part](http://blog.pascal-martin.fr/post/integration-continue-jenkins-projet-php.html)
+* [Jenkins install by Pascal Martin (FR, 2011)](http://blog.pascal-martin.fr/post/integration-continue-jenkins-installation-configuration.html) and [second part](http://blog.pascal-martin.fr/post/integration-continue-jenkins-projet-php.html)
 * [Install Jenkins on Ubuntu (EN, 2015)](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 * [Jenkins and PHP (EN)](https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+and+PHP)
 * [Gnome 3 Jenkins Indicator](https://github.com/philipphoffmann/gnome3-jenkins-indicator)
+* [Continuous integration with Jenkins (EN, 2012)](http://www.sitepoint.com/continuous-integration-with-jenkins-1/) and [second part (EN, 2012)](http://www.sitepoint.com/continuous-integration-with-jenkins-2/)
+* [Automate PSR-compliance through Jenkins](http://www.sitepoint.com/automate-psr-compliance-through-jenkins/)
+* [Installing and securing Jenkins (EN, 2014)](http://www.sitepoint.com/installing-securing-jenkins/)
 
 Install
 -------
