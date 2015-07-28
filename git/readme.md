@@ -12,13 +12,7 @@ git config --global status.showUntrackedFiles all
 Git tools
 ---------
 
-Open gitk as a independent process:
-
-```
-gitk --all &
-or
-gitk --all --date-order &
-```
+### Gitk
 
 Gitk useful options:
 
@@ -28,7 +22,15 @@ Gitk useful options:
 & : Open gitk as a separate process
 ```
 
-Gitk creates the `.gitk` file in your $HOME directory to store preferences such as display options, font, and colors like:
+So we can open gitk as a independent process:
+
+```
+gitk --all &
+or
+gitk --all --date-order &
+```
+
+And personalize gitk. Gitk creates the `.gitk` file in your $HOME directory to store preferences such as display options, font, and colors like. We can edit it:
 
 ```
 set mainfont {Helvetica 9}
@@ -53,6 +55,10 @@ Git workflow
 
 Git useful commands
 -------------------
+
+* [30 git helper options (FR, 2014)](http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues)
+* [Merge and rebase (FR, 2014)](http://www.git-attitude.fr/2014/05/04/bien-utiliser-git-merge-et-rebase/)
+* [Rebasing by Ry (EN](http://rypress.com/tutorials/git/rebasing)
 
 Supprime le fichier du système de suivi de version mais le préserve localement
 ```
@@ -89,3 +95,8 @@ Supprimer tous les stash précédemment enregistrés
 ```
 git stash clear
 ```
+
+Git tutorials
+-------------
+
+* [Ry's Git tutorial (EN)](http://rypress.com/tutorials/git/index)
