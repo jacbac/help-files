@@ -30,9 +30,10 @@ Basic tools
 * `oracle-java8-installer`: official Java installer
 * `xpad`: post-it
 * `htop`: linux process viewer
+* `imagemagick`: image editing
 
 ```
-sudo apt-get install vlc gimp bleachbit sublime-text-installer oracle-java8-installer xpad htop y-ppa-manager
+sudo apt-get install vlc gimp bleachbit sublime-text-installer oracle-java8-installer xpad htop y-ppa-manager imagemagick php5-imagick
 ```
 
 ### Common codec
@@ -234,6 +235,7 @@ update .gitconfig with `dot-files` config example
 * [Plugin SublimeLinter-csslint](https://packagecontrol.io/packages/SublimeLinter-csslint). Prerequisite: `npm install -g csslint`
 * [Plugin SublimeLinter-json](https://packagecontrol.io/packages/SublimeLinter-json)
 * [Plugin Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
+* [Plugin Color Highlighter](https://packagecontrol.io/packages/Color%20Highlighter)
 * [Syntax Highlighting LESS](https://packagecontrol.io/packages/LESS)
 * [Syntax Highlighting SASS](https://packagecontrol.io/packages/Sass)
 * [Syntax Highlighting Behat](https://packagecontrol.io/packages/Behat)
