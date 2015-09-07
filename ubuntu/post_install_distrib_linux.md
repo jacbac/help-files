@@ -32,7 +32,7 @@ Basic tools
 * `htop`: linux process viewer
 
 ```
-sudo apt-get install vlc gimp bleachbit oracle-java8-installer xpad htop
+sudo apt-get install vlc gimp bleachbit sublime-text-installer oracle-java8-installer xpad htop
 ```
 
 ### Common codec
