@@ -205,7 +205,8 @@ Config
 * `Vundle`:
 ```
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-then update .vimrc with `dot-files` config example
+then update ~/.vimrc with `dot-files` config example
+vim +PluginInstall +qall
 ```
 
 * `YouCompleteMe`:
