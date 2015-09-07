@@ -77,9 +77,10 @@ Dev tools
 * `make`, `build-essential`
 * `filezilla`: FTP
 * `mysql-workbench`: mysql admin
+* `postgresql-9.4`: postgreSQL
 
 ```
-sudo apt-get install vim curl tree git apache2 mysql-server php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick php5-dev make build-essential filezilla mysql-workbench
+sudo apt-get install vim curl tree git apache2 mysql-server php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick php5-dev make build-essential filezilla mysql-workbench postgresql-9.4
 ```
 
 ### Terminal / Shell
