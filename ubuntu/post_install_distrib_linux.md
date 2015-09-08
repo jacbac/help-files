@@ -16,6 +16,7 @@ sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+sudo add-apt-repository -y ppa:atareao/utext
 
 sudo apt-get update
 ```
@@ -31,9 +32,10 @@ Basic tools
 * `xpad`: post-it
 * `htop`: linux process viewer
 * `imagemagick`: image editing
+* `utext`: markdown editor
 
 ```
-sudo apt-get install vlc gimp bleachbit sublime-text-installer oracle-java8-installer xpad htop y-ppa-manager imagemagick php5-imagick
+sudo apt-get install vlc gimp bleachbit sublime-text-installer oracle-java8-installer xpad htop y-ppa-manager imagemagick php5-imagick utext
 ```
 
 ### Common codec
