@@ -195,6 +195,27 @@ sudo pear channel-discover 'pear.phpmd.org' && sudo pear channel-discover 'pear.
 sudo pear install --alldeps 'phpmd/PHP_PMD'
 ```
 
+### QA & Monitoring tools
+
+* `phpmetrics`:
+```
+composer global require 'halleck45/phpmetrics'
+```
+
+Then make the command `phpmetrics` accessible:
+
+```
+Simply add this directory to your PATH in your ~/.bash_profile (or ~/.bashrc or ~/.zshrc) like this:
+
+export PATH=~/.composer/vendor/bin:$PATH
+```
+
+And analyse with:
+
+```
+phpmetrics --report-html=myreport.html /path/of/your/sources
+```
+
 ### Others Languages & Frameworks
 
 * `ruby` with `rails`: [Look at this setup](https://gorails.com/setup/ubuntu/14.10)
