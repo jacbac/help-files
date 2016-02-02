@@ -267,6 +267,7 @@ update .gitconfig with `dot-files` config example
 * [Syntax Highlighting Twig](https://packagecontrol.io/packages/Twig)
 * [Syntax Highlighting Markdown](https://packagecontrol.io/packages/Markdown%20Extended)
 * [Theme Monokai Extended](https://packagecontrol.io/packages/Monokai%20Extended)
+* [FR Dictionnaries](http://blog.smarchal.com/correcteur-orthographique-francais-sublime-text/)
 
 ```
 update User Preferences.sublime-settings with `dot-files` config example
