@@ -342,6 +342,7 @@ Update installed stack
 * php-cs-fixer: `sudo php-cs-fixer self-update`
 * pear: `sudo pear channel-update pear.php.net && sudo pear upgrade-all`
 * ruby: `sudo gem update`
+* gem: `sudo gem update --system`
 
 Other
 -----
