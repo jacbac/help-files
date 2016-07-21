@@ -7,6 +7,7 @@ General / Mixed
 * [Association Francophone des Utilisateurs de Symfony : "articles" de l'avent (FR, 2013)](http://afsy.fr/avent/2013)
 * [Welcome to the bundle (EN)](http://welcometothebundle.com/)
 * [William Durand's blog (EN)](http://williamdurand.fr/) and the [older french one (FR)](http://willdurand.fr/)
+* [The League of Extraordinary Packages (EN)](https://thephpleague.com/)
 
 About Coding method
 -------------------
@@ -17,8 +18,8 @@ About Coding method
 * [SOLID First (EN, 2015)](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 * [And a complementray point of view from François Zaninotto (EN, 2013)](http://www.redotheweb.com/2013/06/04/you-should-write-ugly-code.html)
 
-About Doctrine 2
-----------
+About Doctrine 2 & Repositories
+-----------------------
 
 * [Doctrine 2 DQL official](http://doctrine-orm.readthedocs.org/en/latest/reference/dql-doctrine-query-language.html)
 * [Doctrine 2 QueryBuilder official](http://doctrine-orm.readthedocs.org/en/latest/reference/query-builder.html)
@@ -26,12 +27,41 @@ About Doctrine 2
 * [A post from Anne about doctrine repositories ](http://dev.imagineeasy.com/post/44139111915/taiming-repository-classes-in-doctrine-with-the), with [a response from beberlai and use of the specifiation pattern (EN, 2013)](https://github.com/beberlei/whitewashing.de/blob/master/2013/03/04/doctrine_repositories.rst), and [an alternative by Luis Cordova (EN, 2014)](http://www.craftitonline.com/2014/08/alternative-method-to-tame-symfonydoctrine-repositories/)
 * [Some Doctrine 2 best pratices by UVD](http://www.uvd.co.uk/blog/some-doctrine-2-best-practices/)
 * [How Weavora organize their Doctrine 2 repositories (EN, 2013)](http://weavora.com/blog/2013/08/23/how-we-organize-doctrine2-repositories/)
+* [Inject the manager registry instead of the entity manager by Matthias Noback (EN, 2014)](http://php-and-symfony.matthiasnoback.nl/2014/05/inject-the-manager-registry-instead-of-the-entity-manager/) and the second part [Inject a repository instead of an entity manager (EN, 2014)](http://php-and-symfony.matthiasnoback.nl/2014/05/inject-a-repository-instead-of-an-entity-manager/)
+
+About Design Patterns & DDD
+---------------------------
+
+* [DesignPatternsPHP by domnikl](https://github.com/domnikl/DesignPatternsPHP)
+* [Design Pattern](http://www.croes.org/gerald/blog/category/design-pattern/)
+* [PHP-Design-Patterns](http://www.fluffycat.com/PHP-Design-Patterns/)
+
+### Strategy 
+
+### Value Object
+
+* [PHP Value Objects Group](http://www.phpvalueobjects.info/)
+
+#### CommandBus
+
+* [Command buses by Matthias Noback (EN, 2015)](http://php-and-symfony.matthiasnoback.nl/2015/01/a-wave-of-command-buses/) with 5 other related articles on CommandBus, EventBus, etc.
+* [Command bus (EN)](http://shawnmc.cool/command-bus)
+* [Command bus (EN, 2014)](http://culttt.com/2014/11/10/creating-using-command-bus/)
+ 
+### CQRS
+
+* [CoolBlue CQRS presentation](http://fr.slideshare.net/pderaaij/cqrs-espresentation)
+
+### Facade
+
+* [](https://kacper.gunia.me/understanding-gof-facade-design-pattern/)
 
 About Dependency Injection
 --------------------
 
 * [Handle hosts with SF events](http://knpuniversity.com/screencast/question-answer-day/symfony2-dynamic-subdomains) {'DI', 'handle host', 'kernel event'}
 * [Bad practice with setter injection ?](http://richardmiller.co.uk/2014/03/12/avoiding-setter-injection/), see also for reference the [SF2 doc about injections types](http://symfony.com/doc/current/components/dependency_injection/types.html) {'DI', 'setter', 'DI types'}
+* [Lazy Services](http://symfony.com/doc/2.7/components/dependency_injection/lazy_services.html)
 
 About Configurations
 --------------
