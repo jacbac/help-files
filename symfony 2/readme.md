@@ -8,6 +8,7 @@ General / Mixed
 * [Welcome to the bundle (EN)](http://welcometothebundle.com/)
 * [William Durand's blog (EN)](http://williamdurand.fr/) and the [older french one (FR)](http://willdurand.fr/)
 * [The League of Extraordinary Packages (EN)](https://thephpleague.com/)
+* [](http://composingprograms.com/)
 
 About Coding method
 -------------------
@@ -35,6 +36,8 @@ About Design Patterns & DDD
 * [DesignPatternsPHP by domnikl](https://github.com/domnikl/DesignPatternsPHP)
 * [Design Pattern](http://www.croes.org/gerald/blog/category/design-pattern/)
 * [PHP-Design-Patterns](http://www.fluffycat.com/PHP-Design-Patterns/)
+* [Discussion on simplifying Symfony Controller](https://github.com/symfony/symfony/pull/16863)
+* [Action-Domain-Responder: a web-specific refinement of Model-View-Controller](https://github.com/pmjones/adr)
 
 ### Strategy 
 
