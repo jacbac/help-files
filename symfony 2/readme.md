@@ -55,9 +55,13 @@ About Design Patterns & DDD
 
 * [CoolBlue CQRS presentation](http://fr.slideshare.net/pderaaij/cqrs-espresentation)
 
+### Event Driven Design
+
+* [Matthias Noback on events (EN, 2015)](http://php-and-symfony.matthiasnoback.nl/2015/01/from-commands-to-events/)
+
 ### Facade
 
-* [](https://kacper.gunia.me/understanding-gof-facade-design-pattern/)
+* [Understanding GoF facade design pattern](https://kacper.gunia.me/understanding-gof-facade-design-pattern/)
 
 About Dependency Injection
 --------------------
