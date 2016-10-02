@@ -1,9 +1,9 @@
-Post-Install Ubuntu Gnome 14.10
+Post-Install Ubuntu Gnome 16.04
 ===============================
 
-After you install brand new Ubuntu Gnome 14.10 (OK 2015/03/01), the first thing you need to do is to update repositories and make sure you have the latest updates installed.
+After you install brand new Ubuntu Gnome 16.04 (OK 2016/10/02), the first thing you need to do is to update repositories and make sure you have the latest updates installed.
 
-```
+```shell
 sudo apt-get update && sudo apt-get upgrade
 ```
 
@@ -11,13 +11,9 @@ PPAs
 ----
 
 ```shell
-sudo add-apt-repository -y ppa:videolan/stable-daily
-sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo add-apt-repository -y ppa:atareao/utext
-
+sudo add-apt-repository -y ppa:videolan/stable-daily &&
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp &&
+sudo add-apt-repository -y ppa:webupd8team/java &&
 sudo apt-get update
 ```
 
@@ -27,15 +23,13 @@ Basic tools
 * `vlc`: media player
 * `gimp`: photo/image editor
 * `bleachbit`: cleaning utility
-* `sublime-text-installer`: sublime-text 3
 * `oracle-java8-installer`: official Java installer
 * `xpad`: post-it
 * `htop`: linux process viewer
 * `imagemagick`: image editing
-* `utext`: markdown editor
 
 ```
-sudo apt-get install vlc gimp bleachbit sublime-text-installer oracle-java8-installer xpad htop y-ppa-manager imagemagick php5-imagick utext
+sudo apt-get install vlc gimp bleachbit oracle-java8-installer xpad htop imagemagick
 ```
 
 ### Common codec
@@ -50,48 +44,102 @@ sudo apt-get install ubuntu-restricted-extras
 
 * `google-chrome`: google's browser
 ```
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb && rm -f google-chrome-stable_current_amd64.deb
+goto https://www.google.fr/chrome/browser/desktop/
+download last version
+double click on .deb file downloaded
+```
+
+* `sublime-text-3`: ide
+```
+goto https://www.sublimetext.com/3
+download last version
+double click on .deb file downloaded
 ```
 
 * `enpass`: secured passwords manager
 ```
+goto https://www.enpass.io/
+download last version
 cd /path_to/download_directory
 chmod +x EnpassInstaller
-sudo apt-get install libxss1
+sudo apt-get install libxss1 lsof
 ./EnpassInstaller
 ```
 
 * `birdie`: twitter client
 ```
-[Download from official site](http://www.birdieapp.eu/)
+goto http://birdieapp.github.io/
+download last version
+double click on .deb file downloaded
 ```
 
 Dev tools
 ---------
 
 * `vim`
-* `tree`
-* `git`
-* `apache2`
-* `php5`
-* `phpmyadmin`: mysql admin
-* `php5-cli`, `php5-curl`, `php-pear` (for pecl installations), `php5-intl`, `php5-mcrypt`, `php5-mysql`, `php5-imagick`, `php5-dev` (needed by xdebug)
+* `curl`, `tree`
+* `git`, `gitk`: git
 * `make`, `build-essential`
 * `filezilla`: FTP
-* `mysql-workbench`: mysql admin
-* `postgresql-9.4`: postgreSQL
 
 ```
-sudo apt-get install vim curl tree git apache2 mysql-server php5 libapache2-mod-php5 phpmyadmin php5-cli php5-curl php-pear php5-intl php5-mcrypt php5-mysql php5-imagick php5-dev make build-essential filezilla mysql-workbench postgresql-9.4
+sudo apt-get install vim curl tree git gitk make build-essential filezilla
 ```
+
+Lamp tools
+----------
+
+* `apache2`
+* `mysql` and `mysql-workbench`: mysql
+* `php 7`
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+
+```
+sudo apt-get install apache2
+sudo apache2ctl configtest
+```
+
+if a warning emerge (like ``), add to
+
+```
+sudo nano /etc/apache2/apache2.conf
+add to bottom of the file:
+ServerName localhost
+save it and redo sudo apache2ctl configtest
+then test http://localhost/ or http://127.0.0.1/
+```
+```
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+responses : no no yes yes yes yes
+service mysql status
+sudo apt-get install mysql-workbench
+```
+
+```
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+sudo apt-get install php7.0-cli php7.0-curl
+```
+
+* `phpmyadmin`: mysql admin
+
+```
+sudo apt-get install phpmyadmin apache2-utils
+```
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-12-04
+
+### Security
+
+http://www.leshirondellesdunet.com/pare-feu-ufw
 
 ### Terminal / Shell
 
-* `zsh` with `oh-my-zsh`:
+* [`zsh` with `oh-my-zsh`](http://ohmyz.sh/):
 ```
 sudo apt-get install zsh
-chsh -s /bin/zsh
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 then update .zshrc with `dot-files` config example
 reboot if needed
 ```
@@ -107,8 +155,8 @@ sudo mv composer.phar /usr/local/bin/composer
 * [nodejs](https://nodejs.org/):
 ```
 # Note the new setup script name for Node.js v0.12
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
-sudo apt-get install -y nodejs
+sudo apt-get update
+sudo apt-get install -y nodejs npm
 ```
 
 ### Scaffolding Tools
@@ -151,11 +199,8 @@ $ [sudo] npm install -g node-sass
 
 * `xdebug`:
 ```
-sudo pecl install xdebug
-sudo vim /etc/php5/apache2/php.ini
-set
-    zend_extension="/usr/lib/php5/20121212/xdebug.so"
-sudo service apache2 restart
+sudo apt-get install php-xdebug
+http://www.dieuwe.com/blog/xdebug-ubuntu-1604-php7
 ```
 
 ### Testing Tools / Linter
@@ -277,23 +322,6 @@ update gutter themes: open Command Palette, choose `SublimeLinter: Choose Gutter
 update mark style: open Command Palette, choose `Sublime Linter: Choose Mark Style`, select `Outline`.
 ```
 
-### MySQL
-
-```
-sudo mysql_secure_installation
-```
-
-### PHPMyAdmin
-
-```
-sudo cp /usr/share/phpmyadmin/config.sample.inc.php /usr/share/phpmyadmin/config.inc.php
-sudo vim /usr/share/phpmyadmin/config.inc.php
-
-uncomment lines :
-
-$cfg['MaxRows'] = 50;
-```
-
 ### Adding current user to www-data group
 
 ```
@@ -303,7 +331,7 @@ sudo adduser $LOGNAME www-data
 ### PHP
 
 ```
-sudo vim /etc/php5/apache2/php.ini
+sudo vim /etc/php7/apache2/php.ini
 set
     date.timezone = Europe/Paris
 
