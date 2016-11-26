@@ -364,7 +364,7 @@ Update installed stack
 ----------------------
 
 * packages: `sudo apt-get update`
-* composer: `sudo composer self-update`
+* composer: `sudo composer self-update` && `sudo composer global update`
 * npm: `sudo npm install npm -g`
 * phpunit: `sudo phpunit --self-update`
 * php-cs-fixer: `sudo php-cs-fixer self-update`
